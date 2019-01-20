@@ -1,0 +1,70 @@
+/*
+Error: File to import not found or unreadable: project.
+       Load paths:
+         Compass::SpriteImporter
+         E:/markup/MyDub/sass
+         C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets
+        on line 60 of E:/markup/MyDub/sass/style.scss
+
+55:     font-size: 14px;
+56:     line-height: 18px;
+57:   }
+58: } /* ╨б╤В╨╕╨╗╤М ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О *\/
+59: @import "header"; /* ╨и╨░╨┐╨║╨░ *\/
+60: @import "project"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Я╤А╨╛╨╡╨║╤В╤Л  *\/
+61: @import "pg-media"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Ь╨╡╨┤╨╕╨░ *\/
+62: @import "pg-photo"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨д╨╛╤В╨╛ *\/
+63: @import "pg-news"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Э╨╛╨▓╨╛╤Б╤В╨╕ *\/
+64: @import "pg-news__more"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Э╨╛╨▓╨╛╤Б╤В╨╕ ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨░╤П *\/
+65: @import "footer"; /* ╨Я╨╛╨┤╨▓╨░╨╗ *\/
+
+Backtrace:
+E:/markup/MyDub/sass/style.scss:60
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:44:in `import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+C:/Ruby25-x64/bin/compass:23:in `load'
+C:/Ruby25-x64/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: project.\A        Load paths:\A          Compass::SpriteImporter\A          E:/markup/MyDub/sass\A          C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets\A         on line 60 of E:/markup/MyDub/sass/style.scss\A \A 55:     font-size: 14px;\A 56:     line-height: 18px;\A 57:   }\A 58: } /* ╨б╤В╨╕╨╗╤М ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О */\A 59: @import \"header\"; /* ╨и╨░╨┐╨║╨░ */\A 60: @import \"project\"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Я╤А╨╛╨╡╨║╤В╤Л  */\A 61: @import \"pg-media\"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Ь╨╡╨┤╨╕╨░ */\A 62: @import \"pg-photo\"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨д╨╛╤В╨╛ */\A 63: @import \"pg-news\"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Э╨╛╨▓╨╛╤Б╤В╨╕ */\A 64: @import \"pg-news__more\"; /* ╨б╤В╤А╨░╨╜╨╕╤Ж╨░ ╨Э╨╛╨▓╨╛╤Б╤В╨╕ ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨░╤П */\A 65: @import \"footer\"; /* ╨Я╨╛╨┤╨▓╨░╨╗ */"; }
