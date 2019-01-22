@@ -1,3 +1,4 @@
+@import "font"; /* Шрифты */
 @import "var"; /* Переменные */
 @import "mixin"; /* Миксины */
 @import "btn"; /* Кнопки */
@@ -7,11 +8,12 @@ body{
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'PT Serif', serif;
+  font-family: 'Alegreya Sans', sans-serif;
   overflow-x: hidden;
+  background-color: #E5E5E5;
   a{
     color: $c-text-d;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 22px;
     cursor: pointer;
   }
@@ -57,10 +59,6 @@ body{
   }
 } /* Стиль по умолчанию */
 @import "header"; /* Шапка */
-@import "project"; /* Страница Проекты  */
-@import "pg-media"; /* Страница Медиа */
-@import "pg-photo"; /* Страница Фото */
-@import "pg-news"; /* Страница Новости */
-@import "pg-news__more"; /* Страница Новости Подробная */
+@import "pg-prime"; /* Главная */
 @import "footer"; /* Подвал */
 @import "media"; /* Медиа запросы */

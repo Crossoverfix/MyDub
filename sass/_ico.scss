@@ -1,41 +1,18 @@
 .ico{
-  &__home{
-    background: url("../img/svg/home.svg")no-repeat center;
-    background-size: contain;
-    font-size: 0!important;
-    color: transparent!important;
-    vertical-align: middle!important;
-  }
-  &__facebook{
-    background: url("../img/svg/fb.svg")no-repeat center;
-    background-size: contain;
-  }
-  &__vkontakte{
-    background: url("../img/svg/vk.svg")no-repeat center;
-    background-size: contain;
-  }
-  &__odnoklasniki{
-    background: url("../img/svg/ok.svg")no-repeat center;
-    background-size: contain;
-  }
-  &__instagram{
-    background: url("../img/svg/insta.svg")no-repeat center;
-    background-size: contain;
-  }
-  &__youtube{
-    background: url("../img/svg/you_tube_play.svg")no-repeat center;
-    background-size: contain;
-  }
-  &__close{
+  &-vk{
     display: inline-block;
-    height: 25px;
     width: 25px;
-    margin: 0;
-    padding: 0;
-    background: url("../img/svg/close.svg")no-repeat center;
+    height: 20px;
+    margin: 0 5px;
+    background: url("../assets/img/ico/icon_vk.svg")no-repeat center;
     background-size: contain;
-    color: transparent;
-    font-size: 0;
-    vertical-align: top;
+  }
+  &-insta{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin: 0 5px;
+    background: url("../assets/img/ico/icon_inst.svg")no-repeat center;
+    background-size: contain;
   }
 }

@@ -6,237 +6,408 @@
           content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
-    <title>ekaterina</title>
+    <title>My Dubai</title>
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700 &amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="sass/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <div class="container header__navigation">
-        <div class="row">
-            <div class="header__navigation__logo">
-                <a href="index.html">
-                    <img src="img/svg/logo.svg" alt="Logo">
-                </a>
-            </div>
-            <div class="header__navigation__group group__social col-md-6 col-12">
-                <ul>
-                    <li>
-                        <a href="#" class="ico__facebook"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="ico__vkontakte"></a>
-                    </li>
-                    <li>
-                        <a href="#" class="ico__odnoklasniki"> </a>
-                    </li>
-                    <li>
-                        <a href="#" class="ico__instagram"> </a>
-                    </li>
-                    <li>
-                        <a href="#" class="ico__youtube"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__navigation__group group__call-back col-md-6 col-12">
-                <ul>
-                    <li>
-                        <a href="mailto:pressa@fondekaterina.ru" class="link-mail">
-                            <img src="img/svg/email.svg" alt="ico">
-                            <span>pressa@fondekaterina.ru</span>
-                        </a>
-                    </li>
-                    <li class="breaking-media-collapse">
-                        <button type="button" class="btn btn-ghost" data-toggle="modal" data-target="#modal__call-back">Напишите нам</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__navigation__group group__nav-bar col-lg-12 col-md-6 col-12">
-                <button class="mobil-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".mobil-collapse" aria-expanded="false"></button>
-                <a href="#" class="breaking-media-show btn btn-mail" data-toggle="modal" data-target="#modal__call-back"></a>
-                <ul class="mobil-collapse navbar-collapse collapse">
-                    <li class="active">
-                        <a href="#" class="ico__home">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">Проекты</a>
-                    </li>
-                    <li>
-                        <a href="#">Мероприятия</a>
-                    </li>
-                    <li>
-                        <a href="#">Медиа</a>
-                    </li>
-                    <li>
-                        <a href="#">Новости</a>
-                    </li>
-                    <li class="group__nav-bar__separate"></li>
-                    <li>
-                        <a href="#">О св. Екатерине</a>
-                    </li>
-                    <li>
-                        <a href="#">О Екатеринбурге</a>
-                    </li>
-                    <li>
-                        <a href="#">О фонде</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid header__showing">
-        <div class="header__showing__bg bg-media"></div>
+    <div class="container-fluid header__navigation">
         <div class="container">
             <div class="row">
-                <h1>О Фонде</h1>
+                <div class="header__item header__navigation__nav col-lg-6 col-sm-4 col-8">
+                    <button class="mobil-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".mobil-collapse" aria-expanded="false"></button>
+                    <ul class="mobil-collapse navbar-collapse collapse">
+                        <li>
+                            <a href="about_us.html">О Нас</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="about_cur.html">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="404.html">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                        <ul class="mobil-collapse__sub-menu">
+                            <li>
+                                <a class="mobil-collapse__sub-menu__call-back" href="#">Напишите нам</a>
+                            </li>
+                            <li>
+                                <a class="mobil-collapse__sub-menu__call-back" href="#">ЗАКАЖИТЕ ЗВОНОК</a>
+                            </li>
+                            <li>
+                                <a href="tel:8 800 123-45-67" class="header__navigation__tel__link">8 800 123-45-67</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__tel col-xl-3 col-lg col-4 d-sm-flex d-none">
+                    <a href="tel:8 800 123-45-67" class="header__navigation__tel__link">8 800 123-45-67</a>
+                </div>
+                <div class="header__item header__navigation__call-back col-xl-3 col-lg d-lg-flex d-none">
+                    <ul>
+                        <li>
+                            <a href="#">Напишите нам</a>
+                        </li>
+                        <li>
+                            <a href="#">ЗАКАЖИТЕ ЗВОНОК</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__logo col-lg-3 col-md-3 col-sm-5 col-7">
+                    <a href="index.html" class="header__navigation__logo__wrap">
+                        <img src="assets/img/logo-1.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header__item header__navigation__catalog col-xl-6 col-lg-5 col-md-9 col-sm-7 col-5">
+                    <button class="catalog-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".catalog-collapse" aria-expanded="false">Каталог</button>
+                    <ul class="catalog-collapse collapse">
+                        <li>
+                            <a href="#">Женская парфюмерия</a>
+                        </li>
+                        <li>
+                            <a href="#">Мужская парфюмерия</a>
+                        </li>
+                        <li>
+                            <a href="#">Аксессуары</a>
+                        </li>
+                        <li>
+                            <a href="#">Парфюмерия унисекс</a>
+                        </li>
+                        <li>
+                            <a href="#">Нишевая парфюмерия</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__user col-xl-3 col-lg-4 col-4">
+                    <ul>
+                        <li>
+                            <a class="header__navigation__user__profile" href="user_cab.html">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <label class="header__navigation__user__basket__count">2</label>
+                            <a class="header__navigation__user__basket" href="basket.html">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid header__shower">
+        <div class="row header__shower__wrapp"></div>
+    </div>
+    <div class="container-fluid header__breadcrumbs" style="display: none"></div>
 </header>
 <main>
-    <div class="container content__body">
+    <div class="container content-block">
         <div class="row">
-            <div class="content__body__text col-lg-8 col-sm-10 col-12 mx-auto">
-                <h3 class="content__body__text__index__title">Фонд святой Екатерины основан в преддверии 300-летия г. Екатеринбурга</h3>
-                <p>
-                    Фонд святой Екатерины создан в апреле 2017 года группой представителей крупного бизнеса Екатеринбурга в ответ на призыв митрополита Екатеринбургского и Верхотурского Кирилла ко «всем добрым людям, небезразличным к судьбе города, объединиться и внести свою посильную лепту в прекрасную плеяду добрых дел».
-                </p>
-                <p>
-                    Инициаторами и учредителями Фонда стали крупнейшие компании региона, возрождающие и продолжающие традиции российского меценатства на Урале.
-                </p>
-                <h4 class="content__body__text__index__sub-title">Основные задачи Фонда</h4>
-                <ul>
-                    <li>
-                        объединение социально активных горожан, чья деятельность направлена на утверждение и продвижение Екатеринбурга в качестве духовной и культурной столицы Урала;
-                    </li>
-                    <li>
-                        подготовка к празднованию 300-летия Екатеринбурга в 2023 году;
-                    </li>
-                    <li>
-                        поддержка городских общественных инициатив и проектов культурной, духовной и просветительской направленности.
-                    </li>
-                </ul>
+            <div class="content-block__header col-12">
+                <h2>Специальные предложения</h2>
+                <a href="#">смотреть всё</a>
+            </div>
+            <div class="content-block__body col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-1"></div>
+                        </div>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">Ajmal</a>
+                            <span class="content-block__body__card__info__sub-title">Entice Woman</span>
+                            <span class="content-block__body__card__info__value">75 ml</span>
+                        </div>
+                        <div class="content-block__body__card__price">
+                            <span><s>4950 руб</s> 3750 руб</span>
+                        </div>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-2"></div>
+                        </div>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">Attar Collection</a>
+                            <span class="content-block__body__card__info__sub-title">Khaltat Night</span>
+                            <span class="content-block__body__card__info__value">10 ml</span>
+                        </div>
+                        <div class="content-block__body__card__price">
+                            <span><s>5000 руб</s> 7000 руб</span>
+                        </div>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-3"></div>
+                        </div>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">Amouage</a>
+                            <span class="content-block__body__card__info__sub-title">Honour Man</span>
+                            <span class="content-block__body__card__info__value">50 ml</span>
+                        </div>
+                        <div class="content-block__body__card__price">
+                            <span><s>14030 руб</s> 16030 руб</span>
+                        </div>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-4"></div>
+                        </div>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">100 Bon</a>
+                            <span class="content-block__body__card__info__sub-title">Neroli & Petit Grain Printanier</span>
+                            <span class="content-block__body__card__info__value">100 ml</span>
+                        </div>
+                        <div class="content-block__body__card__price">
+                            <span><s>2995 руб</s> 3295 руб</span>
+                        </div>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="scroll-to-top container">
-        <a href="#" class="scroll-to-top__ico"></a>
-    </div>
-    <div class="modal fade" id="modal__call-back" tabindex="-1" role="dialog" aria-labelledby="modal__call-back" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">НАПИШИТЕ НАМ</h5>
-                    <button type="button" class="close modal-button" data-dismiss="modal" aria-label="Close">
-                        <span class="ico__close" aria-hidden="true">&times;</span>
-                    </button>
+    <div class="container content-block">
+        <div class="row">
+            <div class="content-block__header col-12">
+                <h2>ХИТЫ ПРОДАЖ</h2>
+                <a href="#">смотреть всё</a>
+            </div>
+            <div class="content-block__body col-12">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-2"></div>
+                        </div>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">Attar Collection</a>
+                            <span class="content-block__body__card__info__sub-title">Khaltat Night</span>
+                            <span class="content-block__body__card__info__value">10 ml</span>
+                        </div>
+                        <div class="content-block__body__card__price">
+                            <span>7000 руб</span>
+                        </div>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form class="modal__form" name="call-back">
-                        <div class="modal__form__item col-md-6 col-12">
-                            <p class="modal__form__item__placeholder">Ф.И.О</p>
-                            <span class="modal__form__item__wrap">
-                                <input class="modal__form__item__wrap__input" type="text" name="text">
-                            </span>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-3"></div>
                         </div>
-                        <div class="modal__form__item col-md-6 col-12">
-                            <p class="modal__form__item__placeholder">Электронная почта</p>
-                            <span class="modal__form__item__wrap">
-                                <input class="modal__form__item__wrap__input" type="email" name="email">
-                            </span>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">Ajmal</a>
+                            <span class="content-block__body__card__info__sub-title">Entice Woman</span>
+                            <span class="content-block__body__card__info__value">75 ml</span>
                         </div>
-                        <div class="modal__form__item col-12">
-                            <p class="modal__form__item__placeholder">Тема сообщения</p>
-                            <span class="modal__form__item__wrap">
-                                <input class="modal__form__item__wrap__input" type="text" name="them">
-                            </span>
+                        <div class="content-block__body__card__price">
+                            <span>3750 руб</span>
                         </div>
-                        <div class="modal__form__item col-12">
-                            <p class="modal__form__item__placeholder">Сообщение</p>
-                            <span class="modal__form__item__wrap text-area">
-                                <textarea class="modal__form__item__wrap__text-area" name="massage"></textarea>
-                            </span>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-4"></div>
                         </div>
-                        <div class="modal__form__item col-12">
-                            <span class="modal__form__item__wrap file-input">
-                                <label class="modal__form__item__wrap__label" for="call-back__file">Прикрепит</label>
-                                <input class="modal__form__item__wrap__input" type="file" name="file" id="call-back__file" >
-                            </span>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">Amouage</a>
+                            <span class="content-block__body__card__info__sub-title">Honour Man</span>
+                            <span class="content-block__body__card__info__value">50 ml</span>
                         </div>
-                        <div class="modal__form__item col-12">
-                           <div class="modal__form__item__capcha">КАПЧА</div>
+                        <div class="content-block__body__card__price">
+                            <span>16030 руб</span>
                         </div>
-                        <div class="modal__form__item col-12">
-                            <span class="d-flex justify-content-center">
-                                <input class="btn btn-ghost" type="submit" name="form-submit" value="Отправить">
-                            </span>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="content-block__body__card">
+                        <div class="content-block__body__card__img">
+                            <div class="content-block__body__card__img__bg bg-1"></div>
                         </div>
-                    </form>
+                        <div class="content-block__body__card__info">
+                            <a href="#" class="content-block__body__card__info__title">100 Bon</a>
+                            <span class="content-block__body__card__info__sub-title">Neroli & Petit Grain Printanier</span>
+                            <span class="content-block__body__card__info__value">100 ml</span>
+                        </div>
+                        <div class="content-block__body__card__price">
+                            <span>3295 руб</span>
+                        </div>
+                        <button class="btn btn__to-cart">В Корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid comment-about">
+        <div class="container">
+            <div class="row">
+                <h2 class="col-12">ВПЕЧАТЛЕНИЯ О НАС</h2>
+                <div class="comment-about__slider col-12">
+                    <div class="comment-about__slider__temp-control">
+                        <a href="#" class="slide-prev"></a>
+                        <a href="#" class="slide-next"></a>
+                        <div class="slide-curr">
+                            <label></label>
+                            <label class="active"></label>
+                            <label></label>
+                        </div>
+                    </div>
+                    <div class="comment-about__slider__item col-lg-10 col-12 mx-auto">
+                        <div class="comment-about__slider__item__avatar">
+                            <div class="comment-about__slider__item__avatar__wrap">
+                                <img alt="avatar" src="assets/img/card/image.jpg">
+                            </div>
+                        </div>
+                        <div class="comment-about__slider__item__info">
+                            <p class="comment-about__slider__item__info__time">11.01.2019</p>
+                            <p class="comment-about__slider__item__info__user">Данила Козловский</p>
+                            <p class="comment-about__slider__item__info__comment">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container content-block">
+        <div class="row">
+            <div class="content-block__header col-12">
+                <h2>НОВОСТИ</h2>
+                <a href="#">смотреть всё</a>
+            </div>
+            <div class="content-block__body column-mod col-lg-10 col-12 mx-auto">
+                <div class="content-block__body__card">
+                    <div class="content-block__body__card__img">
+                        <div class="content-block__body__card__img__bg bg-2"></div>
+                    </div>
+                    <div class="content-block__body__card__info">
+                        <span class="content-block__body__card__info__time">11.01.2019</span>
+                        <a href="#" class="content-block__body__card__info__title">Поступление духов бренда 100 Bon</a>
+                        <span class="content-block__body__card__info__par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст.</span>
+                    </div>
+                </div>
+                <div class="content-block__body__card">
+                    <div class="content-block__body__card__img">
+                        <div class="content-block__body__card__img__bg bg-1"></div>
+                    </div>
+                    <div class="content-block__body__card__info">
+                        <span class="content-block__body__card__info__time">20.01.2019</span>
+                        <a href="#" class="content-block__body__card__info__title">Начало работы с Khaltat</a>
+                        <span class="content-block__body__card__info__par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце.</span>
+                    </div>
+                </div>
+                <div class="content-block__body__card">
+                    <div class="content-block__body__card__img">
+                        <div class="content-block__body__card__img__bg bg-3"></div>
+                    </div>
+                    <div class="content-block__body__card__info">
+                        <span class="content-block__body__card__info__time">01.01.2019</span>
+                        <a href="#" class="content-block__body__card__info__title">Поздравляем с Новым Годом!</a>
+                        <span class="content-block__body__card__info__par">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст.</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
 <footer>
-    <div class="container-fluid pages-footer">
+    <div class="container-fluid footer__subscribe">
         <div class="container">
             <div class="row">
-                <div class="col-sm-2 col-12">
-                    <div class="pages-footer__logo">
-                        <img src="img/svg/logo.svg" alt="logo">
-                    </div>
+                <h2 class="col-lg-6 col-md-8 col-10 mx-auto">УЗНАЙТЕ ПЕРВЫМ ОБ АКЦИЯХ И СКИДКАХ!</h2>
+                <form class="col-lg-7 col-md-10 col-12 mx-auto">
+                    <span class="footer__subscribe__input">
+                        <input type="email" name="email" placeholder="введите Ваш e-mail">
+                    </span>
+                    <span class="footer__subscribe__submit">
+                        <input type="submit" value="ПОДПИСАТЬСЯ">
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container footer__body">
+        <div class="row">
+            <div class="footer__body__logo col-2 d-lg-block d-none">
+                <a href="index.html">
+                    <img src="assets/img/logo-2.svg" alt="logo">
+                </a>
+            </div>
+            <div class="footer__body__catalog col-xl-2 col-lg-3 col-sm-4 col-12">
+                <a href="catalog.html">КАТАЛОГ ПАРФЮМЕРИИ</a>
+                <button class="footer-catalog-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".footer-catalog-collapse" aria-expanded="false">Каталог</button>
+                <ul class="footer-catalog-collapse collapse">
+                    <li>
+                        <a href="catalog.html">Женская парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Мужская парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Парфюмерия унисекс</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Нишевая парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body__nav col-xl-5 col-lg-4 col-sm-4 col-12">
+                <ul>
+                    <li>
+                        <a href="about_us.html">О НАС</a>
+                    </li>
+                    <li>
+                        <a href="news.html">НОВОСТИ</a>
+                    </li>
+                    <li>
+                        <a href="about_cur.html">ОПЛАТА И ДОСТАВКА</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body__contact col-lg-3 col-sm-4 col-12">
+                <p>г. Екатеринбург ТРЦ Гринвич, 4 очередь, 1 этаж (над Гиперболой)</p>
+                <a href="tel:88001234567" class="footer__body__contact__tel">8 800 123-45-67</a>
+                <a href="mailto:info@mydubai.ru" class="footer__body__contact__mail">info@mydubai.ru</a>
+                <div class="footer__body__contact__social">
+                    <a href="#" class="ico-vk"></a>
+                    <a href="#" class="ico-insta"></a>
                 </div>
-                <div class="col-sm-4 col-12">
-                    <div class="pages-footer__social">
-                        <ul>
-                            <li>
-                                <a href="#" class="ico__facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="ico__vkontakte"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="ico__odnoklasniki"> </a>
-                            </li>
-                            <li>
-                                <a href="#" class="ico__instagram"> </a>
-                            </li>
-                            <li>
-                                <a href="#" class="ico__youtube"></a>
-                            </li>
-                        </ul>
-                        <p>2017 © Фонд святой Екатерины</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-12">
-                    <div class="pages-footer__call-back">
-                        <ul>
-                            <li>
-                                <a href="mailto:pressa@fondekaterina.ru" class="link-mail">
-                                    <img src="img/svg/email.svg" alt="ico">
-                                    <span>pressa@fondekaterina.ru</span>
-                                </a>
-                            </li>
-                            <li>
-                                <button type="button" class="btn btn-ghost" data-toggle="modal" data-target="#modal__call-back">Напишите нам</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            </div>
+            <div class="footer__body__copyright col-12">
+                <p>ИП Положенцева М.В. 2019 © Все права защищены</p>
             </div>
         </div>
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

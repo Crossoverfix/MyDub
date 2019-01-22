@@ -7,51 +7,31 @@ button, button:active, button:hover, button:visited,button:focus{
     outline: none;
     box-shadow: none;
   }
-}
-.btn-ghost{
-  font-size: 18px!important;
-  line-height: 18px!important;
-  color: $c-text-d;
-  border: 2px solid $c-brown;
-  border-radius: 20px;
-  background-color: transparent;
-  padding: 9px 30px;
-  &:hover{
-    background-color: $c-brown;
+  &__to-cart{
+    border-radius: 0;
+    border: 0;
+    background-color: $c-purple;
     color: white;
-  }
-}
-.btn-mail{
-  height: 20px;
-  width: 22px;
-  background: url("../img/svg/envelope.svg")no-repeat center;
-  background-size: contain;
-  padding: 0;
-  position: absolute;
-  right: 15px;
-  top: 0;
-  display: none;
-  z-index: 1;
-  &:hover{
-    opacity: 0.8;
-  }
-}
-.mobil-collapse__btn{
-  display: none;
-  border: none;
-  outline: none;
-  &.collapsed{
-    background: url("../img/svg/menu.svg")no-repeat transparent center;
-    background-size: contain;
-  }
-  background: url("../img/svg/close.svg")no-repeat transparent center;
-  background-size: contain;
-  height: 15px;
-  width: 25px;
-  flex-shrink: 0;
-  z-index: 1;
-  &:hover,&:focus{
-    border: none;
-    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    height: 42px;
+    line-height: 22px;
+    padding: 0;
+    font-weight: 300;
+    &:hover{
+      opacity: 0.6;
+    }
+    &:after{
+      content: "";
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin-left: 10px;
+      background: url("../assets/img/cart.svg")no-repeat center;
+      background-size: contain;
+      vertical-align: sub;
+    }
   }
 }
