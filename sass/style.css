@@ -474,20 +474,19 @@ body h6 {
 .mobil-collapse ul.mobil-collapse__sub-menu {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   width: 100%;
-  right: -100%;
-  top: 20px;
+  margin-top: 20px;
 }
-/* line 255, _header.scss */
+/* line 254, _header.scss */
 .mobil-collapse ul.mobil-collapse__sub-menu .header__navigation__tel__link {
   display: none;
 }
-/* line 258, _header.scss */
+/* line 257, _header.scss */
 .mobil-collapse ul.mobil-collapse__sub-menu li {
   margin-bottom: 20px;
 }
-/* line 260, _header.scss */
+/* line 259, _header.scss */
 .mobil-collapse ul.mobil-collapse__sub-menu li a.mobil-collapse__sub-menu__call-back {
   text-decoration: underline;
   text-transform: uppercase;
@@ -495,7 +494,7 @@ body h6 {
   font-size: 15px;
   white-space: nowrap;
 }
-/* line 266, _header.scss */
+/* line 265, _header.scss */
 .mobil-collapse ul.mobil-collapse__sub-menu li a.mobil-collapse__sub-menu__call-back:hover {
   color: #000000;
 }
@@ -516,7 +515,7 @@ body h6 {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 27px;
   color: #000000;
   line-height: 34px;
 }
@@ -733,7 +732,7 @@ body h6 {
 .comment-about h2 {
   font-family: 'Cormorant', serif;
   color: #000000;
-  font-size: 28px;
+  font-size: 27px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -863,7 +862,7 @@ body h6 {
 /* line 6, _footer.scss */
 .footer__subscribe h2 {
   color: white;
-  font-size: 28px;
+  font-size: 27px;
   font-family: 'Cormorant', sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -1176,16 +1175,46 @@ body h6 {
   }
 
   /* line 45, _media.scss */
-  .mobil-collapse.show {
-    display: block;
+  ul.mobil-collapse.collapsing {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding: 20px 15px;
+    left: 0;
+    top: 40px;
+    overflow: hidden;
+  }
+  /* line 53, _media.scss */
+  ul.mobil-collapse.collapsing:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #ddd4e1;
   }
 
-  /* line 48, _media.scss */
+  /* line 63, _media.scss */
+  .mobil-collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* line 68, _media.scss */
+  .mobil-collapse.collapsing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* line 73, _media.scss */
   .mobil-collapse__btn {
     display: block;
   }
 
-  /* line 51, _media.scss */
+  /* line 76, _media.scss */
   ul.mobil-collapse {
     position: absolute;
     z-index: 2;
@@ -1194,100 +1223,100 @@ body h6 {
     left: 0;
     top: 40px;
   }
-  /* line 58, _media.scss */
+  /* line 83, _media.scss */
   ul.mobil-collapse:before {
     content: "";
     position: absolute;
-    width: 200vw;
+    width: 100%;
     height: 100%;
-    left: -100%;
+    left: 0;
     top: 0;
-    background-color: white;
+    background-color: #ddd4e1;
   }
 
-  /* line 68, _media.scss */
+  /* line 93, _media.scss */
   .mobil-collapse ul.mobil-collapse__sub-menu {
     display: flex;
   }
 
-  /* line 71, _media.scss */
+  /* line 96, _media.scss */
   .header__navigation__tel:before {
     width: 0;
   }
 
-  /* line 74, _media.scss */
+  /* line 99, _media.scss */
   .header__navigation__tel {
     text-align: center;
   }
 
-  /* line 77, _media.scss */
+  /* line 102, _media.scss */
   .header__navigation__tel .header__navigation__tel__link {
     margin: 0 auto;
   }
 
-  /* line 80, _media.scss */
+  /* line 105, _media.scss */
   .header__navigation__user__profile {
     font-size: 0 !important;
   }
 
-  /* line 83, _media.scss */
+  /* line 108, _media.scss */
   .header__navigation__user__basket {
     font-size: 0 !important;
   }
 
-  /* line 86, _media.scss */
+  /* line 111, _media.scss */
   .header__navigation__user ul li {
     margin-left: 12px;
   }
 
-  /* line 89, _media.scss */
+  /* line 114, _media.scss */
   .header__navigation__catalog ul li {
     min-width: 33%;
   }
 
-  /* line 92, _media.scss */
+  /* line 117, _media.scss */
   .comment-about__slider__item {
     flex-direction: column;
   }
 
-  /* line 95, _media.scss */
+  /* line 120, _media.scss */
   .comment-about__slider__item__avatar {
     width: 40%;
   }
 
-  /* line 98, _media.scss */
+  /* line 123, _media.scss */
   .comment-about__slider__item__info {
     padding-top: 20px;
   }
 
-  /* line 101, _media.scss */
+  /* line 126, _media.scss */
   .comment-about__slider__item__info__time {
     text-align: center;
   }
 
-  /* line 104, _media.scss */
+  /* line 129, _media.scss */
   .comment-about__slider__item__info__user {
     text-align: center;
   }
 
-  /* line 107, _media.scss */
+  /* line 132, _media.scss */
   .content-block__body.column-mod .content-block__body__card__img {
     padding: 0 25px 0 0;
   }
 
-  /* line 110, _media.scss */
+  /* line 135, _media.scss */
   .footer__body__nav ul li {
     min-width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 115, _media.scss */
+  /* line 140, _media.scss */
   .header__navigation__catalog ul li {
     min-width: 50%;
     margin: 1px 0;
   }
 
-  /* line 119, _media.scss */
+  /* line 144, _media.scss */
   .content-block__header a {
     top: auto;
     bottom: 0;
@@ -1295,34 +1324,34 @@ body h6 {
     transform: translateX(50%);
   }
 
-  /* line 125, _media.scss */
+  /* line 150, _media.scss */
   .content-block__header {
     padding-bottom: 25px;
   }
 
-  /* line 128, _media.scss */
+  /* line 153, _media.scss */
   .footer__body__contact__tel {
     font-size: 24px;
     white-space: nowrap;
   }
 
-  /* line 132, _media.scss */
+  /* line 157, _media.scss */
   .footer__body__contact p {
     margin-bottom: 15px;
   }
 
-  /* line 135, _media.scss */
+  /* line 160, _media.scss */
   .footer__body__nav ul li {
     margin-bottom: 5px;
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 140, _media.scss */
+  /* line 165, _media.scss */
   .mobil-collapse__sub-menu .header__navigation__tel__link {
     display: block !important;
   }
 
-  /* line 143, _media.scss */
+  /* line 168, _media.scss */
   .mobil-collapse ul.mobil-collapse__sub-menu {
     position: relative;
     width: 100%;
@@ -1331,169 +1360,168 @@ body h6 {
     padding-top: 10px;
   }
 
-  /* line 150, _media.scss */
+  /* line 175, _media.scss */
   .mobil-collapse ul.mobil-collapse__sub-menu li {
     margin-bottom: 4px;
   }
 
-  /* line 153, _media.scss */
+  /* line 178, _media.scss */
   .catalog-collapse.collapse {
     display: none;
   }
 
-  /* line 156, _media.scss */
+  /* line 181, _media.scss */
   .catalog-collapse__btn {
     display: block;
   }
 
-  /* line 159, _media.scss */
+  /* line 184, _media.scss */
   .catalog-collapse.show {
     display: block;
   }
 
-  /* line 162, _media.scss */
+  /* line 187, _media.scss */
   ul.catalog-collapse {
     position: absolute;
     top: 100%;
     right: 15px;
     z-index: 1;
     padding: 20px 20px;
-    text-align: right;
   }
-  /* line 169, _media.scss */
+  /* line 193, _media.scss */
   ul.catalog-collapse:before {
     content: "";
     position: absolute;
-    right: -100%;
+    right: 0;
     top: 0;
     background-color: #e5e5e5;
-    width: 200vw;
+    width: 100%;
     height: 100%;
   }
 
-  /* line 179, _media.scss */
+  /* line 203, _media.scss */
   .comment-about__slider__item__avatar {
     width: 80%;
   }
 
-  /* line 182, _media.scss */
+  /* line 206, _media.scss */
   .content-block__body.column-mod .content-block__body__card {
     flex-direction: column;
     align-items: center !important;
   }
 
-  /* line 186, _media.scss */
+  /* line 210, _media.scss */
   .content-block__body.column-mod .content-block__body__card__img {
     width: 60%;
     margin-bottom: 20px;
   }
 
-  /* line 190, _media.scss */
+  /* line 214, _media.scss */
   .content-block__body.column-mod .content-block__body__card__info__time {
     width: 100%;
     text-align: center;
     margin-right: 0;
   }
 
-  /* line 195, _media.scss */
+  /* line 219, _media.scss */
   .content-block__body.column-mod .content-block__body__card__info__title {
     width: 100%;
     text-align: center;
   }
 
-  /* line 199, _media.scss */
+  /* line 223, _media.scss */
   .footer__subscribe form {
     flex-wrap: wrap;
   }
 
-  /* line 202, _media.scss */
+  /* line 226, _media.scss */
   .footer__subscribe__input {
     margin: 0 0 12px 0;
   }
 
-  /* line 205, _media.scss */
+  /* line 229, _media.scss */
   .footer__subscribe__submit {
     width: 100%;
   }
 
-  /* line 208, _media.scss */
+  /* line 232, _media.scss */
   .footer__subscribe__submit input {
     width: 100%;
   }
 
-  /* line 211, _media.scss */
+  /* line 235, _media.scss */
   .footer__body__contact p {
     text-align: center;
     margin-top: 15px;
   }
 
-  /* line 215, _media.scss */
+  /* line 239, _media.scss */
   .footer__body__contact__tel {
     text-align: center;
   }
 
-  /* line 218, _media.scss */
+  /* line 242, _media.scss */
   .footer__body__contact__mail {
     text-align: center;
     margin-bottom: 15px;
   }
 
-  /* line 222, _media.scss */
+  /* line 246, _media.scss */
   .footer__body__contact__social {
     justify-content: center;
   }
 
-  /* line 225, _media.scss */
+  /* line 249, _media.scss */
   .footer__body__nav ul {
     padding: 0;
   }
 
-  /* line 228, _media.scss */
+  /* line 252, _media.scss */
   .footer__body__nav ul li {
     min-width: 35%;
   }
 
-  /* line 231, _media.scss */
+  /* line 255, _media.scss */
   .footer__body__nav ul li:nth-child(2n) {
     margin-left: auto;
   }
 
-  /* line 234, _media.scss */
+  /* line 258, _media.scss */
   .footer__body {
     padding-top: 40px;
   }
 
-  /* line 237, _media.scss */
+  /* line 261, _media.scss */
   .footer__subscribe {
     padding: 40px 0 80px 0;
   }
 
-  /* line 240, _media.scss */
+  /* line 264, _media.scss */
   .footer__body__catalog > a {
     display: none;
   }
 
-  /* line 243, _media.scss */
+  /* line 267, _media.scss */
   .footer-catalog-collapse__btn {
     display: block;
   }
 
-  /* line 246, _media.scss */
+  /* line 270, _media.scss */
   .footer__body__catalog ul {
     text-align: center;
   }
 
-  /* line 249, _media.scss */
+  /* line 273, _media.scss */
   .footer-catalog-collapse.collapse {
     display: none;
   }
 
-  /* line 252, _media.scss */
+  /* line 276, _media.scss */
   .footer__body__catalog {
     padding-top: 40px;
   }
 
-  /* line 255, _media.scss */
+  /* line 279, _media.scss */
   .footer-catalog-collapse.show {
     display: block;
   }

@@ -248,10 +248,9 @@
   ul.mobil-collapse__sub-menu{
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     width: 100%;
-    right: -100%;
-    top: 20px;
+    margin-top: 20px;
     .header__navigation__tel__link{
       display: none;
     }
