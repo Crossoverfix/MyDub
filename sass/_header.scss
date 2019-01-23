@@ -329,17 +329,22 @@
     position: relative;
     width: 100%;
     margin-top: 20px;
+    .header__breadcrumbs__search{
+      margin-top: 15px;
+    }
     .header__navigation__tel__link{
       display: none;
     }
     li{
-      margin-bottom: 20px;
+      margin-bottom: 0;
       a.mobil-collapse__sub-menu__call-back{
         text-decoration: underline;
         text-transform: uppercase;
         color: $c-text-d-6;
         font-size: 15px;
         white-space: nowrap;
+        margin-bottom: 15px;
+        display: inline-block;
         &:hover{
           color: $c-text-d;
         }

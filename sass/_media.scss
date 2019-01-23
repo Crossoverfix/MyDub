@@ -24,6 +24,12 @@
   .slider__full-screen__control{
     width: 60%;
   }
+  .about-cur__block__body span{
+    width: 14%;
+  }
+  .about-cur__block__body p{
+    width: 85%;
+  }
 }
 @media screen and (max-width: 991px){
   .header__item{
@@ -147,6 +153,12 @@
       display: none;
     }
   }
+  .about-cur__block__body span{
+    width: 18%;
+  }
+  .about-cur__block__body p{
+    width: 81%;
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__catalog ul li{
@@ -171,6 +183,12 @@
   }
   .footer__body__nav ul li{
     margin-bottom: 5px;
+  }
+  .about-cur__block__body span{
+    width: 25%;
+  }
+  .about-cur__block__body p{
+    width: 74%;
   }
 }
 @media screen and (max-width: 574px){
@@ -199,7 +217,8 @@
   ul.catalog-collapse{
     position: absolute;
     top: 100%;
-    right: 15px;
+    right: 0;
+    width: 100%;
     z-index: 1;
     padding: 20px 20px;
     &:before{
@@ -301,5 +320,14 @@
   .about-us__video__wrap:after{
     right: 5px;
     bottom: 5px;
+  }
+  .about-cur__block__body span{
+    width: 30%;
+  }
+  .about-cur__block__body p{
+    width: 69%;
+  }
+  .header__navigation__catalog ul li a{
+    white-space: normal;
   }
 }

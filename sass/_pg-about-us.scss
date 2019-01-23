@@ -1,5 +1,6 @@
 .about-us{
-  padding: 80px 0 40px 0;
+  padding-top: 80px;
+  padding-bottom: 40px;
   position: relative;
   &:before{
     content: "";
@@ -79,6 +80,40 @@
           background: url("../assets/img/ico/icon_youtb.svg")no-repeat center;
           background-size: contain;
         }
+      }
+    }
+  }
+}
+.about-cur{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__block{
+    margin-bottom: 30px;
+    h3{
+      font-size: 17px;
+      color: $c-text-d;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+    &__body{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
+      span{
+        width: 10%;
+        font-size: 15px;
+        color: $c-text-d;
+        font-weight: 300;
+        margin-bottom: 8px;
+      }
+      p{
+        width: 89%;
+        font-size: 15px;
+        color: $c-text-d-6;
+        font-weight: 300;
+        margin-bottom: 8px;
       }
     }
   }
