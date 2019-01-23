@@ -21,6 +21,9 @@
   .footer__body__logo a{
     padding: 0 20px;
   }
+  .slider__full-screen__control{
+    width: 60%;
+  }
 }
 @media screen and (max-width: 991px){
   .header__item{
@@ -134,6 +137,15 @@
   }
   .footer__body__nav ul li{
     min-width: 100%;
+  }
+  .slider__full-screen__control{
+    width: 95%;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    justify-content: space-between;
+    ul{
+      display: none;
+    }
   }
 }
 @media screen and (max-width: 767px){
@@ -278,5 +290,16 @@
   }
   .footer-catalog-collapse.show{
     display: block;
+  }
+  .about-us__video__wrap{
+    padding: 25px;
+  }
+  .about-us__video__wrap:before{
+    left: 5px;
+    top: 5px;
+  }
+  .about-us__video__wrap:after{
+    right: 5px;
+    bottom: 5px;
   }
 }
