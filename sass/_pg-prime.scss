@@ -6,7 +6,6 @@
   &__header{
     position: relative;
     margin-bottom: 30px;
-    font-family: 'Cormorant', serif;
     h2{
       width: 100%;
       text-align: center;
@@ -14,8 +13,10 @@
       font-size: 27px;
       color: $c-text-d;
       line-height: 34px;
+      font-family: 'Cormorant', serif;
     }
-    a{
+    > a{
+      font-family: 'Cormorant', serif;
       position: absolute;
       height: 34px;
       top: 0;
@@ -39,6 +40,52 @@
       }
       &:hover{
         opacity: 0.8;
+      }
+    }
+    form{
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      p{
+        font-size: 14px;
+        color: $c-text-d-3;
+        display: inline-block;
+        width: 80px;
+        margin: 0;
+      }
+      > a{
+        display: inline-block;
+        padding: 0 30px 0 0;
+        color: $c-text-d-6;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 12px;
+          height: 6px;
+          background: url("../assets/img/ico/arrow-w.svg")no-repeat center;
+          background-size: contain;
+        }
+        &:hover{
+          text-decoration: none;
+          color: $c-text-d;
+        }
+      }
+      div{
+        &.drop-filter{
+          min-width: auto;
+          border: none;
+          border-radius: 6px;
+          padding: 0;
+          overflow: hidden;
+        }
+        a{
+
+        }
       }
     }
   }

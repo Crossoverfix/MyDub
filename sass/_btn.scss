@@ -34,4 +34,21 @@ button, button:active, button:hover, button:visited,button:focus{
       vertical-align: sub;
     }
   }
+  &__purple{
+    background-color: $c-purple;
+    color: white;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 2px 30px 0 30px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 38px;
+    &:hover{
+      background-color: #4B1177;
+    }
+  }
 }
