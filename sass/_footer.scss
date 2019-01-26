@@ -67,9 +67,13 @@
         }
       }
     }
+    & ~ .footer__body{
+      border-top: none;
+    }
   }
   &__body{
     padding-top: 80px;
+    border-top: rgba(0, 0, 0, 0.04) 4px solid;
     &__logo{
       a{
         height: auto;

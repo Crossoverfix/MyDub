@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>My Dubai</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700|Cormorant:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="sass/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container-fluid header__navigation">
+        <div class="container">
+            <div class="row">
+                <div class="header__item header__navigation__nav col-lg-6 col-sm-4 col-7">
+                    <button class="mobil-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".mobil-collapse" aria-expanded="false"></button>
+                    <ul class="mobil-collapse navbar-collapse collapse">
+                        <li>
+                            <a href="about_us.html">О Нас</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="about_cur.html">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="404.html">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                        <ul class="mobil-collapse__sub-menu">
+                            <li>
+                                <a class="mobil-collapse__sub-menu__call-back" href="#">Напишите нам</a>
+                            </li>
+                            <li>
+                                <a class="mobil-collapse__sub-menu__call-back" href="#">ЗАКАЖИТЕ ЗВОНОК</a>
+                            </li>
+                            <li>
+                                <a href="tel:8 800 123-45-67" class="header__navigation__tel__link">8 800 123-45-67</a>
+                            </li>
+                            <form class="header__breadcrumbs__search d-sm-none d-flex">
+                                <input type="text" name="search" placeholder="Поиск">
+                                <label><input type="submit" value=""></label>
+                            </form>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__tel col-xl-3 col-lg col-4 d-sm-flex d-none">
+                    <a href="tel:8 800 123-45-67" class="header__navigation__tel__link">8 800 123-45-67</a>
+                </div>
+                <div class="header__item header__navigation__call-back col-xl-3 col-lg d-lg-flex d-none">
+                    <ul>
+                        <li>
+                            <a href="#">Напишите нам</a>
+                        </li>
+                        <li>
+                            <a href="#">ЗАКАЖИТЕ ЗВОНОК</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__logo col-lg-3 col-md-3 col-sm-5 col-7">
+                    <a href="index.html" class="header__navigation__logo__wrap">
+                        <img src="assets/img/logo-1.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header__item header__navigation__catalog col-xl-6 col-lg-5 col-md-9 col-sm-7 col-5">
+                    <button class="catalog-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".catalog-collapse" aria-expanded="false">Каталог</button>
+                    <ul class="catalog-collapse collapse">
+                        <li>
+                            <a href="#">Женская парфюмерия</a>
+                        </li>
+                        <li>
+                            <a href="#">Мужская парфюмерия</a>
+                        </li>
+                        <li>
+                            <a href="#">Аксессуары</a>
+                        </li>
+                        <li>
+                            <a href="#">Парфюмерия унисекс</a>
+                        </li>
+                        <li>
+                            <a href="#">Нишевая парфюмерия</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__user col-xl-3 col-sm-4 col-5">
+                    <ul>
+                        <li>
+                            <a class="header__navigation__user__profile" href="user_cab.html">Личный кабинет</a>
+                        </li>
+                        <li>
+                            <label class="header__navigation__user__basket__count">2</label>
+                            <a class="header__navigation__user__basket" href="basket.html">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header__breadcrumbs">
+       <div class="container">
+           <div class="row">
+               <ul class="header__breadcrumbs__link">
+                   <li>
+                       <a href="index.html">Главная</a>
+                   </li>
+                   <li>
+                       <a href="about_cur.html">Оплата и доставка</a>
+                   </li>
+               </ul>
+               <form class="header__breadcrumbs__search col-lg-3 col-md-4 col-5 d-sm-flex d-none">
+                    <input type="text" name="search" placeholder="Поиск">
+                    <label><input type="submit" value=""></label>
+               </form>
+           </div>
+       </div>
+    </div>
+</header>
+<main>
+    <div class="container contact__info">
+        <div class="row">
+           <div class="col-12">
+               <p class="contact__info__addr">Екатеринбург, ТРЦ Гринвич, 4 очередь, 1 этаж (над Гиперболой)</p>
+           </div>
+           <div class="col-md-4 col-sm-6 col-12">
+               <a href="#" class="contact__info__phone">8 800 123-45-67</a>
+           </div>
+           <div class="col-md-4 col-sm-6 col-12">
+               <a href="#" class="contact__info__whatsapp">+7 (908) 922-29-11</a>
+           </div>
+           <div class="col-md-4 col-sm-6 col-12">
+               <a href="#" class="contact__info__vk">vk.com/mydubai</a>
+           </div>
+           <div class="col-md-4 col-sm-6 col-12">
+               <a href="#" class="contact__info__mail">info@mydubai.ru</a>
+           </div>
+           <div class="col-md-4 col-sm-6 col-12">
+               <a href="#" class="contact__info__viber">+7 (908) 922-29-11</a>
+           </div>
+           <div class="col-md-4 col-sm-6 col-12">
+               <a href="#" class="contact__info__insta">@mydubai_perfum</a>
+           </div>
+       </div>
+    </div>
+    <div class="container-fluid contact__map">
+        <div class="map">
+        </div>
+    </div>
+    <div class="container contact__call-back">
+        <div class="row">
+            <div class="col-12">
+                <h2>НАПИШИТЕ НАМ</h2>
+            </div>
+            <div class="col-md-10 col-sm-8 col-12 mx-auto">
+                <form>
+                    <div class="col-lg-4 col-12">
+                        <span>
+                            <input type="text" name="name" placeholder="Имя">
+                        </span>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <span>
+                            <input type="email" name="email" placeholder="E-mail">
+                        </span>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <span>
+                            <input type="number" name="name" placeholder="+7 (___) ___-__-__" step="0">
+                        </span>
+                    </div>
+                    <div class="col-12">
+                        <span>
+                            <textarea name="text" placeholder="Текст"></textarea>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-12 mx-auto">
+                        <span>
+                            <input class="btn btn__purple purple-block" type="submit" name="sub" value="ОТПРАВИТЬ">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container footer__body">
+        <div class="row">
+            <div class="footer__body__logo col-2 d-lg-block d-none">
+                <a href="index.html">
+                    <img src="assets/img/logo-2.svg" alt="logo">
+                </a>
+            </div>
+            <div class="footer__body__catalog col-xl-2 col-lg-3 col-sm-4 col-12">
+                <a href="catalog.html">КАТАЛОГ ПАРФЮМЕРИИ</a>
+                <button class="footer-catalog-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".footer-catalog-collapse" aria-expanded="false">Каталог</button>
+                <ul class="footer-catalog-collapse collapse">
+                    <li>
+                        <a href="catalog.html">Женская парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Мужская парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Парфюмерия унисекс</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Нишевая парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body__nav col-xl-5 col-lg-4 col-sm-4 col-12">
+                <ul>
+                    <li>
+                        <a href="about_us.html">О НАС</a>
+                    </li>
+                    <li>
+                        <a href="news.html">НОВОСТИ</a>
+                    </li>
+                    <li>
+                        <a href="about_cur.html">ОПЛАТА И ДОСТАВКА</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body__contact col-lg-3 col-sm-4 col-12">
+                <p>г. Екатеринбург ТРЦ Гринвич, 4 очередь, 1 этаж (над Гиперболой)</p>
+                <a href="tel:88001234567" class="footer__body__contact__tel">8 800 123-45-67</a>
+                <a href="mailto:info@mydubai.ru" class="footer__body__contact__mail">info@mydubai.ru</a>
+                <div class="footer__body__contact__social">
+                    <a href="#" class="ico-vk"></a>
+                    <a href="#" class="ico-insta"></a>
+                </div>
+            </div>
+            <div class="footer__body__copyright col-12">
+                <p>ИП Положенцева М.В. 2019 © Все права защищены</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

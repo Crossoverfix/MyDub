@@ -58,6 +58,16 @@ button, button:active, button:hover, button:visited, button:focus {
   height: 38px;
 }
 /* line 50, _btn.scss */
+.btn__purple.purple-block {
+  border-radius: 0;
+  width: 100%;
+  height: 38px;
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
+  padding-top: 2px;
+}
+/* line 59, _btn.scss */
 .btn__purple:hover {
   background-color: #4B1177;
 }
@@ -1168,6 +1178,145 @@ body h6 {
   margin-bottom: 8px;
 }
 
+/* line 122, _pg-about-us.scss */
+.contact__info {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* line 125, _pg-about-us.scss */
+.contact__info p, .contact__info a {
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  color: #000000;
+  padding-left: 30px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+/* line 133, _pg-about-us.scss */
+.contact__info p:before, .contact__info a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 16px;
+  background-size: contain;
+}
+/* line 144, _pg-about-us.scss */
+.contact__info a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 150, _pg-about-us.scss */
+.contact__info__addr:before {
+  background: url("../assets/img/ico/ico-c-addr.svg") no-repeat center;
+}
+/* line 155, _pg-about-us.scss */
+.contact__info__phone:before {
+  background: url("../assets/img/ico/ico-c-phone.svg") no-repeat center;
+}
+/* line 160, _pg-about-us.scss */
+.contact__info__whatsapp:before {
+  background: url("../assets/img/ico/ico-c-whatsapp.svg") no-repeat center;
+}
+/* line 165, _pg-about-us.scss */
+.contact__info__vk:before {
+  background: url("../assets/img/ico/ico-c-vk.svg") no-repeat center;
+}
+/* line 170, _pg-about-us.scss */
+.contact__info__mail:before {
+  background: url("../assets/img/ico/ico-c-mail.svg") no-repeat center;
+}
+/* line 175, _pg-about-us.scss */
+.contact__info__viber:before {
+  background: url("../assets/img/ico/ico-c-viber.svg") no-repeat center;
+}
+/* line 180, _pg-about-us.scss */
+.contact__info__insta:before {
+  background: url("../assets/img/ico/ico-c-insta.svg") no-repeat center;
+}
+/* line 185, _pg-about-us.scss */
+.contact__map {
+  position: relative;
+  height: 600px;
+}
+/* line 188, _pg-about-us.scss */
+.contact__map .map {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/img/map.jpg") no-repeat center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 198, _pg-about-us.scss */
+.contact__call-back {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* line 201, _pg-about-us.scss */
+.contact__call-back h2 {
+  font-family: 'Cormorant', serif;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 209, _pg-about-us.scss */
+.contact__call-back form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* line 214, _pg-about-us.scss */
+.contact__call-back form > div {
+  position: relative;
+  margin-bottom: 12px;
+}
+/* line 218, _pg-about-us.scss */
+.contact__call-back form span {
+  width: 100%;
+  min-height: 38px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+}
+/* line 224, _pg-about-us.scss */
+.contact__call-back form span input::-webkit-outer-spin-button,
+.contact__call-back form span input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+/* line 230, _pg-about-us.scss */
+.contact__call-back form span input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+}
+/* line 241, _pg-about-us.scss */
+.contact__call-back form span textarea {
+  padding: 6px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 90px;
+}
+
 /* ╨Ю ╨╜╨░╤Б, ╨Ю╨┐╨╗╨░╤В╨░ ╨╕ ╨┤╨╛╤Б╤В╨░╨▓╨║, ╨Э╨╛╨▓╨╛╤Б╤В╨╕ */
 /* line 2, _footer.scss */
 .footer__subscribe {
@@ -1248,21 +1397,26 @@ body h6 {
 .footer__subscribe__submit input:hover {
   background-color: #4B1177;
 }
-/* line 71, _footer.scss */
-.footer__body {
-  padding-top: 80px;
+/* line 70, _footer.scss */
+.footer__subscribe ~ .footer__body {
+  border-top: none;
 }
 /* line 74, _footer.scss */
+.footer__body {
+  padding-top: 80px;
+  border-top: rgba(0, 0, 0, 0.04) 4px solid;
+}
+/* line 78, _footer.scss */
 .footer__body__logo a {
   height: auto;
   display: inline-block;
   padding: 0 40px;
 }
-/* line 78, _footer.scss */
+/* line 82, _footer.scss */
 .footer__body__logo a img {
   width: 100%;
 }
-/* line 85, _footer.scss */
+/* line 89, _footer.scss */
 .footer__body__catalog > a {
   white-space: nowrap;
   font-size: 15px;
@@ -1272,33 +1426,33 @@ body h6 {
   text-transform: uppercase;
   display: inline-block;
 }
-/* line 93, _footer.scss */
+/* line 97, _footer.scss */
 .footer__body__catalog > a:hover {
   color: #000000;
   text-decoration: none;
 }
-/* line 98, _footer.scss */
+/* line 102, _footer.scss */
 .footer__body__catalog ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: block;
 }
-/* line 103, _footer.scss */
+/* line 107, _footer.scss */
 .footer__body__catalog ul li {
   margin-bottom: 5px;
 }
-/* line 105, _footer.scss */
+/* line 109, _footer.scss */
 .footer__body__catalog ul li a {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
 }
-/* line 109, _footer.scss */
+/* line 113, _footer.scss */
 .footer__body__catalog ul li a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
-/* line 117, _footer.scss */
+/* line 121, _footer.scss */
 .footer__body__nav ul {
   list-style-type: none;
   padding: 0 20px;
@@ -1310,12 +1464,12 @@ body h6 {
   justify-content: flex-start;
   position: relative;
 }
-/* line 127, _footer.scss */
+/* line 131, _footer.scss */
 .footer__body__nav ul li {
   min-width: 50%;
   margin-bottom: 15px;
 }
-/* line 130, _footer.scss */
+/* line 134, _footer.scss */
 .footer__body__nav ul li a {
   white-space: nowrap;
   font-size: 15px;
@@ -1324,12 +1478,12 @@ body h6 {
   text-transform: uppercase;
   display: inline-block;
 }
-/* line 137, _footer.scss */
+/* line 141, _footer.scss */
 .footer__body__nav ul li a:hover {
   color: #000000;
   text-decoration: none;
 }
-/* line 146, _footer.scss */
+/* line 150, _footer.scss */
 .footer__body__contact p {
   font-size: 15px;
   font-weight: 300;
@@ -1337,7 +1491,7 @@ body h6 {
   text-align: right;
   margin-bottom: 25px;
 }
-/* line 153, _footer.scss */
+/* line 157, _footer.scss */
 .footer__body__contact__tel {
   font-size: 25px;
   display: block;
@@ -1347,13 +1501,13 @@ body h6 {
   width: 100%;
   margin-bottom: 3px;
 }
-/* line 161, _footer.scss */
+/* line 165, _footer.scss */
 .footer__body__contact__tel:hover {
   text-decoration: none;
   color: #8111AE;
   opacity: 0.8;
 }
-/* line 167, _footer.scss */
+/* line 171, _footer.scss */
 .footer__body__contact__mail {
   font-size: 15px;
   font-weight: 300;
@@ -1363,28 +1517,28 @@ body h6 {
   width: 100%;
   margin-bottom: 30px;
 }
-/* line 175, _footer.scss */
+/* line 179, _footer.scss */
 .footer__body__contact__mail:hover {
   color: #8111AE;
 }
-/* line 179, _footer.scss */
+/* line 183, _footer.scss */
 .footer__body__contact__social {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: nowrap;
 }
-/* line 185, _footer.scss */
+/* line 189, _footer.scss */
 .footer__body__contact__social a:hover {
   opacity: 0.6;
 }
-/* line 191, _footer.scss */
+/* line 195, _footer.scss */
 .footer__body__copyright {
   margin-top: 30px;
   padding-top: 8px;
   border-top: 1px solid rgba(0, 0, 0, 0.04);
 }
-/* line 195, _footer.scss */
+/* line 199, _footer.scss */
 .footer__body__copyright p {
   text-align: center;
   font-size: 15px;
@@ -1393,7 +1547,7 @@ body h6 {
   margin-bottom: 8px;
 }
 
-/* line 206, _footer.scss */
+/* line 210, _footer.scss */
 .footer-catalog-collapse__btn {
   display: none;
   background: transparent;
@@ -1407,7 +1561,7 @@ body h6 {
   top: 0;
   transform: translateX(-50%);
 }
-/* line 218, _footer.scss */
+/* line 222, _footer.scss */
 .footer-catalog-collapse__btn:before {
   content: "";
   position: absolute;
