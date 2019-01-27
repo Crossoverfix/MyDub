@@ -162,6 +162,14 @@
   .content-block__header form{
     justify-content: center;
   }
+  .register span.w-3-to-1{
+    width: 32%;
+  }
+  .register form > div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__catalog ul li{

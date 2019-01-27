@@ -130,65 +130,68 @@
     </div>
 </header>
 <main>
-    <div class="container contact__info">
-        <div class="row">
-           <div class="col-12">
-               <p class="contact__info__addr">Екатеринбург, ТРЦ Гринвич, 4 очередь, 1 этаж (над Гиперболой)</p>
-           </div>
-           <div class="col-md-4 col-sm-6 col-12">
-               <a href="#" class="contact__info__phone">8 800 123-45-67</a>
-           </div>
-           <div class="col-md-4 col-sm-6 col-12">
-               <a href="#" class="contact__info__whatsapp">+7 (908) 922-29-11</a>
-           </div>
-           <div class="col-md-4 col-sm-6 col-12">
-               <a href="#" class="contact__info__vk">vk.com/mydubai</a>
-           </div>
-           <div class="col-md-4 col-sm-6 col-12">
-               <a href="#" class="contact__info__mail">info@mydubai.ru</a>
-           </div>
-           <div class="col-md-4 col-sm-6 col-12">
-               <a href="#" class="contact__info__viber">+7 (908) 922-29-11</a>
-           </div>
-           <div class="col-md-4 col-sm-6 col-12">
-               <a href="#" class="contact__info__insta">@mydubai_perfum</a>
-           </div>
-       </div>
-    </div>
-    <div class="container-fluid contact__map">
-        <div class="map">
-        </div>
-    </div>
-    <div class="container contact__call-back">
+    <div class="container register">
         <div class="row">
             <div class="col-12">
-                <h2>НАПИШИТЕ НАМ</h2>
+                <h2>СОЗДАЙТЕ ЛИЧНЫЙ КАБИНЕТ</h2>
             </div>
             <div class="col-md-10 col-sm-8 col-12 mx-auto">
                 <form>
-                    <div class="col-lg-4 col-12">
-                        <span>
-                            <input type="text" name="name" placeholder="Имя">
-                        </span>
-                    </div>
-                    <div class="col-lg-4 col-12">
+                    <div class="col-lg-4 col-12 order-0 order-lg-1">
                         <span>
                             <input type="email" name="email" placeholder="E-mail">
                         </span>
-                    </div>
-                    <div class="col-lg-4 col-12">
                         <span>
                             <input type="number" name="name" placeholder="+7 (___) ___-__-__" step="0">
                         </span>
                     </div>
-                    <div class="col-12">
+                    <div class="col-lg-4 col-12 order-1">
                         <span>
-                            <textarea name="text" placeholder="Текст"></textarea>
+                            <input type="text" name="surname" placeholder="Фамилия *">
+                        </span>
+                        <span>
+                            <input type="text" name="name" placeholder="Имя *">
+                        </span>
+                        <span>
+                            <input type="text" name="lastname" placeholder="Отчество *">
+                        </span>
+                        <span>
+                            <select>
+                                <option value="def" disabled selected>Город</option>
+                                <option value="1">Моздок</option>
+                                <option value="2">Москва</option>
+                                <option value="3">Москаьск</option>
+                                <option value="4">Монино</option>
+                            </select>
+                        </span>
+                        <span>
+                            <input type="text" name="street" placeholder="Улица">
+                        </span>
+                        <span class="w-3-to-1">
+                            <input type="number" name="house" placeholder="Дом">
+                        </span>
+                        <span class="w-3-to-1">
+                            <input type="number" name="housing" placeholder="Корпус">
+                        </span>
+                        <span class="w-3-to-1">
+                            <input type="number" name="apartment" placeholder="Квартира">
+                        </span>
+                        <span class="bg-transparent">
+                            <input type="checkbox" name="subscibe">
+                            <p>Узнавать первым об акциях и скидках</p>
                         </span>
                     </div>
-                    <div class="col-md-4 col-12 mx-auto">
+                    <div class="col-lg-4 col-12 order-0 order-lg-1">
+                        <span>
+                            <input type="password" name="pass" placeholder="Пароль *">
+                        </span>
+                        <span>
+                            <input type="password" name="password" placeholder="Повторите пароль *">
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-12 mx-auto order-1">
                         <span class="bg-transparent">
-                            <input class="btn btn__purple purple-block" type="submit" name="sub" value="ОТПРАВИТЬ">
+                            <input class="btn btn__purple purple-block" type="submit" name="sub" value="ЗАРЕГИСТРИРОВАТЬСЯ">
                         </span>
                     </div>
                 </form>

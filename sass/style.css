@@ -1318,6 +1318,575 @@ body h6 {
 }
 
 /* ╨Ю ╨╜╨░╤Б, ╨Ю╨┐╨╗╨░╤В╨░ ╨╕ ╨┤╨╛╤Б╤В╨░╨▓╨║, ╨Э╨╛╨▓╨╛╤Б╤В╨╕ */
+/* line 1, _user.scss */
+.register {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* line 4, _user.scss */
+.register h2 {
+  font-family: 'Cormorant', serif;
+  font-size: 27px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 12, _user.scss */
+.register form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* line 17, _user.scss */
+.register form > div {
+  position: relative;
+}
+/* line 20, _user.scss */
+.register form span {
+  width: 100%;
+  min-height: 38px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+/* line 28, _user.scss */
+.register form span input::-webkit-outer-spin-button,
+.register form span input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+/* line 34, _user.scss */
+.register form span input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+}
+/* line 45, _user.scss */
+.register form span textarea {
+  padding: 6px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 90px;
+}
+/* line 53, _user.scss */
+.register form span select {
+  padding: 0 6px;
+  border: none;
+  outline: none;
+  height: 38px;
+  width: 100%;
+}
+/* line 59, _user.scss */
+.register form span select option {
+  height: 30px;
+}
+/* line 63, _user.scss */
+.register form span input[type=checkbox] {
+  width: 14px;
+  height: auto;
+  margin-right: 8px;
+  cursor: pointer;
+}
+/* line 68, _user.scss */
+.register form span input[type=checkbox] ~ p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+  vertical-align: top;
+  white-space: normal;
+  width: calc(100% - 22px);
+}
+
+/* line 82, _user.scss */
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* line 85, _user.scss */
+.user-private {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+/* line 88, _user.scss */
+.user-private ul.nav-tabs {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #8111AE;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* line 100, _user.scss */
+.user-private li.nav-item {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  height: 38px;
+}
+/* line 108, _user.scss */
+.user-private a.nav-link {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+}
+/* line 118, _user.scss */
+.user-private a.nav-link:hover {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  color: #000000;
+}
+/* line 124, _user.scss */
+.user-private a.nav-link.active {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+/* line 128, _user.scss */
+.user-private__header {
+  padding-top: 5px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+/* line 132, _user.scss */
+.user-private__header p {
+  width: 100%;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+/* line 139, _user.scss */
+.user-private__header a {
+  display: inline-block;
+  font-size: 21px;
+  color: #8111AE;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-right: 8px;
+  cursor: pointer;
+}
+/* line 147, _user.scss */
+.user-private__header a:hover {
+  opacity: 0.6;
+}
+/* line 151, _user.scss */
+.user-private__header span {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+/* line 158, _user.scss */
+.user-private__body {
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+/* line 161, _user.scss */
+.user-private__body__account-setting {
+  display: none;
+}
+/* line 163, _user.scss */
+.user-private__body__account-setting.show {
+  display: block;
+}
+/* line 166, _user.scss */
+.user-private__body__account-setting form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: flex-start;
+}
+/* line 174, _user.scss */
+.user-private__body__account-setting form .form__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* line 175, _user.scss */
+.user-private__body__account-setting form .form__item h3 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+/* line 186, _user.scss */
+.user-private__body__account-setting form .form__item__input {
+  width: 100%;
+}
+/* line 189, _user.scss */
+.user-private__body__account-setting form .form__item__input.status__read span {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+}
+/* line 193, _user.scss */
+.user-private__body__account-setting form .form__item__input.status__read input {
+  background-color: transparent;
+}
+/* line 196, _user.scss */
+.user-private__body__account-setting form .form__item__input.status__read select {
+  background-color: transparent;
+}
+/* line 200, _user.scss */
+.user-private__body__account-setting form .form__item__input.status__read p label {
+  background: url("../assets/img/ico/edit.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 206, _user.scss */
+.user-private__body__account-setting form .form__item__input.w-3-to-1 {
+  width: calc((100% - 30px) / 3);
+}
+/* line 209, _user.scss */
+.user-private__body__account-setting form .form__item__input p {
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  width: 100%;
+}
+/* line 216, _user.scss */
+.user-private__body__account-setting form .form__item__input p label {
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background: url("../assets/img/ico/save.svg") no-repeat center;
+  background-size: contain;
+}
+/* line 230, _user.scss */
+.user-private__body__account-setting form span {
+  width: 100%;
+  min-height: 38px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+/* line 238, _user.scss */
+.user-private__body__account-setting form span input::-webkit-outer-spin-button,
+.user-private__body__account-setting form span input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+/* line 244, _user.scss */
+.user-private__body__account-setting form span input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+}
+/* line 255, _user.scss */
+.user-private__body__account-setting form span textarea {
+  padding: 6px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 90px;
+}
+/* line 263, _user.scss */
+.user-private__body__account-setting form span select {
+  padding: 0 6px;
+  border: none;
+  outline: none;
+  height: 38px;
+  width: 100%;
+}
+/* line 269, _user.scss */
+.user-private__body__account-setting form span select option {
+  height: 30px;
+}
+/* line 273, _user.scss */
+.user-private__body__account-setting form span input[type=checkbox] {
+  width: 14px;
+  height: auto;
+  margin-right: 8px;
+  cursor: pointer;
+}
+/* line 278, _user.scss */
+.user-private__body__account-setting form span input[type=checkbox] ~ p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+  vertical-align: top;
+  white-space: normal;
+  width: calc(100% - 22px);
+}
+/* line 292, _user.scss */
+.user-private__body__change-pass {
+  display: none;
+}
+/* line 294, _user.scss */
+.user-private__body__change-pass.show {
+  display: block;
+}
+/* line 297, _user.scss */
+.user-private__body__change-pass form {
+  width: 100%;
+}
+/* line 299, _user.scss */
+.user-private__body__change-pass form h3 {
+  font-size: 17px;
+  color: #000000;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+/* line 305, _user.scss */
+.user-private__body__change-pass form span {
+  width: 100%;
+  min-height: 38px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 16px;
+  white-space: nowrap;
+}
+/* line 313, _user.scss */
+.user-private__body__change-pass form span input::-webkit-outer-spin-button,
+.user-private__body__change-pass form span input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+/* line 319, _user.scss */
+.user-private__body__change-pass form span input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+}
+/* line 330, _user.scss */
+.user-private__body__change-pass form span textarea {
+  padding: 6px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  height: 90px;
+}
+/* line 338, _user.scss */
+.user-private__body__change-pass form span select {
+  padding: 0 6px;
+  border: none;
+  outline: none;
+  height: 38px;
+  width: 100%;
+}
+/* line 344, _user.scss */
+.user-private__body__change-pass form span select option {
+  height: 30px;
+}
+/* line 348, _user.scss */
+.user-private__body__change-pass form span input[type=checkbox] {
+  width: 14px;
+  height: auto;
+  margin-right: 8px;
+  cursor: pointer;
+}
+/* line 353, _user.scss */
+.user-private__body__change-pass form span input[type=checkbox] ~ p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+  vertical-align: top;
+  white-space: normal;
+  width: calc(100% - 22px);
+}
+/* line 367, _user.scss */
+.user-private__body__history-buy {
+  display: none;
+}
+/* line 369, _user.scss */
+.user-private__body__history-buy.show {
+  display: block;
+}
+/* line 372, _user.scss */
+.user-private__body__history-buy__order {
+  width: 100%;
+  position: relative;
+  margin-bottom: 45px;
+}
+/* line 377, _user.scss */
+.user-private__body__history-buy__order__head p {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+/* line 385, _user.scss */
+.user-private__body__history-buy__order__head span {
+  display: inline-block;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 12px;
+}
+/* line 392, _user.scss */
+.user-private__body__history-buy__order__body {
+  width: 100%;
+}
+/* line 394, _user.scss */
+.user-private__body__history-buy__order__body__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: 12px;
+}
+/* line 402, _user.scss */
+.user-private__body__history-buy__order__body__item a, .user-private__body__history-buy__order__body__item p {
+  margin: 0;
+}
+/* line 405, _user.scss */
+.user-private__body__history-buy__order__body__item p.item__name {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  font-weight: 300;
+}
+/* line 410, _user.scss */
+.user-private__body__history-buy__order__body__item p.item__name:hover {
+  color: #000000;
+}
+/* line 415, _user.scss */
+.user-private__body__history-buy__order__body__item .item__name {
+  width: 30%;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: underline;
+  color: #8111AE;
+  display: inline-block;
+}
+/* line 422, _user.scss */
+.user-private__body__history-buy__order__body__item .item__name span {
+  color: #000000;
+  display: inline-block;
+  text-decoration: underline #8111AE;
+}
+/* line 427, _user.scss */
+.user-private__body__history-buy__order__body__item .item__name:hover {
+  color: #CC11FF;
+}
+/* line 431, _user.scss */
+.user-private__body__history-buy__order__body__item .item__size {
+  width: 10%;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+/* line 439, _user.scss */
+.user-private__body__history-buy__order__body__item .item__fix-price {
+  width: 10%;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 446, _user.scss */
+.user-private__body__history-buy__order__body__item .item__price {
+  width: 10%;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000000;
+}
+/* line 453, _user.scss */
+.user-private__body__history-buy__order__body__item .item__value {
+  width: 10%;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8111AE;
+}
+/* line 463, _user.scss */
+.user-private__body__history-buy__order__footer {
+  margin-top: 5px;
+  padding: 20px 25px;
+  background-color: rgba(129, 17, 174, 0.08);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* line 473, _user.scss */
+.user-private__body__history-buy__order__footer p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+/* line 481, _user.scss */
+.user-private__body__history-buy__order__footer span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 21px;
+  color: #000000;
+  margin-right: 40px;
+}
+
+/* ╨а╨╡╨│╨╕╤Б╤В╤А╨░╤Ж╨╕╤П, ╨Ы╨╕╤З╨╜╤Л╨╣ ╨║╨░╨▒╨╕╨╜╨╡╤В, 404 */
+/* ╨Ь╨░╨│╨░╨╖╨╕╨╜, ╨в╨╛╨▓╨░╤А, ╨Ъ╨╛╤А╨╖╨╕╨╜╨░ */
 /* line 2, _footer.scss */
 .footer__subscribe {
   padding: 80px 0;
@@ -1820,15 +2389,27 @@ body h6 {
   .content-block__header form {
     justify-content: center;
   }
+
+  /* line 165, _media.scss */
+  .register span.w-3-to-1 {
+    width: 32%;
+  }
+
+  /* line 168, _media.scss */
+  .register form > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 167, _media.scss */
+  /* line 175, _media.scss */
   .header__navigation__catalog ul li {
     min-width: 50%;
     margin: 1px 0;
   }
 
-  /* line 171, _media.scss */
+  /* line 179, _media.scss */
   .content-block__header > a {
     top: auto;
     bottom: 0;
@@ -1836,44 +2417,44 @@ body h6 {
     transform: translateX(50%);
   }
 
-  /* line 177, _media.scss */
+  /* line 185, _media.scss */
   .content-block__header {
     padding-bottom: 25px;
   }
 
-  /* line 180, _media.scss */
+  /* line 188, _media.scss */
   .footer__body__contact__tel {
     font-size: 24px;
     white-space: nowrap;
   }
 
-  /* line 184, _media.scss */
+  /* line 192, _media.scss */
   .footer__body__contact p {
     margin-bottom: 15px;
   }
 
-  /* line 187, _media.scss */
+  /* line 195, _media.scss */
   .footer__body__nav ul li {
     margin-bottom: 5px;
   }
 
-  /* line 190, _media.scss */
+  /* line 198, _media.scss */
   .about-cur__block__body span {
     width: 25%;
   }
 
-  /* line 193, _media.scss */
+  /* line 201, _media.scss */
   .about-cur__block__body p {
     width: 74%;
   }
 }
 @media screen and (max-width: 574px) {
-  /* line 198, _media.scss */
+  /* line 206, _media.scss */
   .mobil-collapse__sub-menu .header__navigation__tel__link {
     display: block !important;
   }
 
-  /* line 201, _media.scss */
+  /* line 209, _media.scss */
   .mobil-collapse ul.mobil-collapse__sub-menu {
     position: relative;
     width: 100%;
@@ -1882,27 +2463,27 @@ body h6 {
     padding-top: 10px;
   }
 
-  /* line 208, _media.scss */
+  /* line 216, _media.scss */
   .mobil-collapse ul.mobil-collapse__sub-menu li {
     margin-bottom: 4px;
   }
 
-  /* line 211, _media.scss */
+  /* line 219, _media.scss */
   .catalog-collapse.collapse {
     display: none;
   }
 
-  /* line 214, _media.scss */
+  /* line 222, _media.scss */
   .catalog-collapse__btn {
     display: block;
   }
 
-  /* line 217, _media.scss */
+  /* line 225, _media.scss */
   .catalog-collapse.show {
     display: block;
   }
 
-  /* line 220, _media.scss */
+  /* line 228, _media.scss */
   ul.catalog-collapse {
     position: absolute;
     top: 100%;
@@ -1911,7 +2492,7 @@ body h6 {
     z-index: 1;
     padding: 20px 20px;
   }
-  /* line 227, _media.scss */
+  /* line 235, _media.scss */
   ul.catalog-collapse:before {
     content: "";
     position: absolute;
@@ -1922,173 +2503,173 @@ body h6 {
     height: 100%;
   }
 
-  /* line 237, _media.scss */
+  /* line 245, _media.scss */
   .comment-about__slider__item__avatar {
     width: 80%;
   }
 
-  /* line 240, _media.scss */
+  /* line 248, _media.scss */
   .content-block__body.column-mod .content-block__body__card {
     flex-direction: column;
     align-items: center !important;
   }
 
-  /* line 244, _media.scss */
+  /* line 252, _media.scss */
   .content-block__body.column-mod .content-block__body__card__img {
     width: 60%;
     margin-bottom: 20px;
   }
 
-  /* line 248, _media.scss */
+  /* line 256, _media.scss */
   .content-block__body.column-mod .content-block__body__card__info__time {
     width: 100%;
     text-align: center;
     margin-right: 0;
   }
 
-  /* line 253, _media.scss */
+  /* line 261, _media.scss */
   .content-block__body.column-mod .content-block__body__card__info__title {
     width: 100%;
     text-align: center;
   }
 
-  /* line 257, _media.scss */
+  /* line 265, _media.scss */
   .footer__subscribe form {
     flex-wrap: wrap;
   }
 
-  /* line 260, _media.scss */
+  /* line 268, _media.scss */
   .footer__subscribe__input {
     margin: 0 0 12px 0;
   }
 
-  /* line 263, _media.scss */
+  /* line 271, _media.scss */
   .footer__subscribe__submit {
     width: 100%;
   }
 
-  /* line 266, _media.scss */
+  /* line 274, _media.scss */
   .footer__subscribe__submit input {
     width: 100%;
   }
 
-  /* line 269, _media.scss */
+  /* line 277, _media.scss */
   .footer__body__contact p {
     text-align: center;
     margin-top: 15px;
   }
 
-  /* line 273, _media.scss */
+  /* line 281, _media.scss */
   .footer__body__contact__tel {
     text-align: center;
   }
 
-  /* line 276, _media.scss */
+  /* line 284, _media.scss */
   .footer__body__contact__mail {
     text-align: center;
     margin-bottom: 15px;
   }
 
-  /* line 280, _media.scss */
+  /* line 288, _media.scss */
   .footer__body__contact__social {
     justify-content: center;
   }
 
-  /* line 283, _media.scss */
+  /* line 291, _media.scss */
   .footer__body__nav ul {
     padding: 0;
   }
 
-  /* line 286, _media.scss */
+  /* line 294, _media.scss */
   .footer__body__nav ul li {
     min-width: 35%;
   }
 
-  /* line 289, _media.scss */
+  /* line 297, _media.scss */
   .footer__body__nav ul li:nth-child(2n) {
     margin-left: auto;
   }
 
-  /* line 292, _media.scss */
+  /* line 300, _media.scss */
   .footer__body {
     padding-top: 40px;
   }
 
-  /* line 295, _media.scss */
+  /* line 303, _media.scss */
   .footer__subscribe {
     padding: 40px 0 80px 0;
   }
 
-  /* line 298, _media.scss */
+  /* line 306, _media.scss */
   .footer__body__catalog > a {
     display: none;
   }
 
-  /* line 301, _media.scss */
+  /* line 309, _media.scss */
   .footer-catalog-collapse__btn {
     display: block;
   }
 
-  /* line 304, _media.scss */
+  /* line 312, _media.scss */
   .footer__body__catalog ul {
     text-align: center;
   }
 
-  /* line 307, _media.scss */
+  /* line 315, _media.scss */
   .footer-catalog-collapse.collapse {
     display: none;
   }
 
-  /* line 310, _media.scss */
+  /* line 318, _media.scss */
   .footer__body__catalog {
     padding-top: 40px;
   }
 
-  /* line 313, _media.scss */
+  /* line 321, _media.scss */
   .footer-catalog-collapse.show {
     display: block;
   }
 
-  /* line 316, _media.scss */
+  /* line 324, _media.scss */
   .about-us__video__wrap {
     padding: 25px;
   }
 
-  /* line 319, _media.scss */
+  /* line 327, _media.scss */
   .about-us__video__wrap:before {
     left: 5px;
     top: 5px;
   }
 
-  /* line 323, _media.scss */
+  /* line 331, _media.scss */
   .about-us__video__wrap:after {
     right: 5px;
     bottom: 5px;
   }
 
-  /* line 327, _media.scss */
+  /* line 335, _media.scss */
   .about-cur__block__body span {
     width: 30%;
   }
 
-  /* line 330, _media.scss */
+  /* line 338, _media.scss */
   .about-cur__block__body p {
     width: 69%;
   }
 
-  /* line 333, _media.scss */
+  /* line 341, _media.scss */
   .header__navigation__catalog ul li a {
     white-space: normal;
   }
 
-  /* line 336, _media.scss */
+  /* line 344, _media.scss */
   .content-block__header form {
     background-color: rgba(129, 17, 174, 0.08);
     height: 38px;
     justify-content: flex-start;
   }
 
-  /* line 341, _media.scss */
+  /* line 349, _media.scss */
   .content-block__header form > a {
     flex-grow: 1;
     height: 100%;
@@ -2096,14 +2677,14 @@ body h6 {
     text-align: center;
   }
 
-  /* line 347, _media.scss */
+  /* line 355, _media.scss */
   .content-block__header form div.drop-filter {
     text-align: center;
     width: 65%;
     background-color: #ddd4e1;
   }
 
-  /* line 352, _media.scss */
+  /* line 360, _media.scss */
   .btn__purple {
     width: 100%;
   }
