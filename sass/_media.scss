@@ -30,6 +30,34 @@
   .about-cur__block__body p{
     width: 85%;
   }
+  .user-private__body__history-buy__order__body__item {
+    .item{
+      &__name{
+        width: 35%;
+      }
+      &__size{
+        width: 15%;
+      }
+      &__fix-price{
+        width: 15%;
+      }
+      &__price{
+        width: 15%;
+      }
+      &__value{
+        width: 15%;
+      }
+    }
+  }
+  .loyalty-program__block h2{
+    padding: 0 160px;
+  }
+  .loyalty-program__block > p{
+    padding: 0 200px;
+  }
+  .loyalty-program__block__body > div > p{
+    padding: 0 5px;
+  }
 }
 @media screen and (max-width: 991px){
   .header__item{
@@ -170,6 +198,27 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .user-private ul.nav-tabs{
+    border-right: none;
+    border-bottom: 1px solid $c-purple;
+    flex-direction: row;
+  }
+  .user-private li.nav-item{
+    width: auto;
+    flex-grow: 1;
+  }
+  .user-private__header{
+    padding-top: 25px;
+  }
+  .user-private{
+    padding-bottom: 0;
+  }
+  .loyalty-program__block h2{
+    padding: 0 40px;
+  }
+  .loyalty-program__block > p {
+    padding: 0 80px;
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__catalog ul li{
@@ -200,6 +249,48 @@
   }
   .about-cur__block__body p{
     width: 74%;
+  }
+  .user-private__body__history-buy__order__body__item {
+    .item{
+      &__name{
+        width: 35%;
+      }
+      &__size{
+        width: 14%;
+      }
+      &__fix-price{
+        width: 17%;
+      }
+      &__price{
+        width: 20%;
+      }
+      &__value{
+        width: 14%;
+      }
+    }
+  }
+  .user-private__body__history-buy__order__footer p{
+    margin-right: 0;
+    width: 25%;
+  }
+  .user-private__body__history-buy__order__footer span{
+    margin-right: 0;
+    width: 25%;
+  }
+  .page-404__label-link{
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+  }
+  .page-404 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .loyalty-program__block h2{
+    padding: 0;
+  }
+  .loyalty-program__block > p {
+    padding: 0;
   }
 }
 @media screen and (max-width: 574px){
@@ -359,5 +450,63 @@
   }
   .btn__purple{
     width: 100%;
+  }
+  .user-private__body__history-buy__order__body__item {
+    flex-wrap: wrap;
+    .item{
+      &__name{
+        width: 65%;
+        order: 1;
+      }
+      &__size{
+        width: 33%;
+        order: 2;
+      }
+      &__fix-price{
+        width: 33%;
+        order: 2;
+      }
+      &__price{
+        width: 35%;
+        order: 1;
+      }
+      &__value{
+        width: 33%;
+        order: 2;
+      }
+    }
+  }
+  .user-private__body__history-buy__order__footer{
+    flex-wrap: wrap;
+  }
+  .user-private__body__history-buy__order__footer p{
+    width: 50%;
+    margin-bottom: 8px;
+  }
+  .user-private__body__history-buy__order__footer span{
+    width: 50%;
+    margin-bottom: 8px;
+  }
+  .user-private ul.nav-tabs{
+    flex-direction: column;
+  }
+  .user-private li.nav-item{
+    width: 100%;
+  }
+  .page-404 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .page-404__label-link a{
+    width: 155px;
+    height: 155px;
+    flex-shrink: 0;
+  }
+  .page-404__content > div{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .loyalty-program{
+    padding-bottom: 0;
   }
 }

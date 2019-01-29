@@ -1,0 +1,124 @@
+.page-404{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  h1{
+    color: $c-purple;
+    font-size: 90px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  p{
+    font-size: 21px;
+    color: $c-text-d-6;
+    margin-bottom: 10px;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    li{
+      width: 100%;
+      a{
+        color: $c-purple;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: 300;
+        cursor: pointer;
+        &:hover{
+          color: $c-pink-ghost;
+        }
+      }
+    }
+  }
+  &__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  &__label-link{
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    &__home{
+      background-color: rgba(129, 17, 174, 0.6);
+      left: 15px;
+      span:before{
+        background: url("../assets/img/ico/ico_home.svg")no-repeat center;
+        background-size: contain;
+      }
+    }
+    &__hit{
+      background-color: rgba(129, 17, 174, 0.2);
+      right: 15px;
+      span:before{
+        background: url("../assets/img/ico/ico_hit.svg")no-repeat center;
+        background-size: contain;
+      }
+    }
+    a{
+      display: inline-flex;
+      width: 165px;
+      height: 165px;
+      border-radius: 50%;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        text-decoration: none;
+        color: $c-text-d;
+        span{
+          text-decoration: none;
+          color: $c-text-d;
+          &:before{
+            opacity: 0.8;
+          }
+        }
+      }
+      span{
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        vertical-align: center;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+          transform: translate(-50%,100%);
+          height: 14px;
+          width: 14px;
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}
+.link-list{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    li{
+      margin-bottom: 10px;
+      a{
+        color: $c-purple;
+        font-size: 18px;
+      }
+    }
+  }
+}

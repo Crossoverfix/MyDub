@@ -51,7 +51,7 @@
                             <li>
                                 <a href="tel:8 800 123-45-67" class="header__navigation__tel__link">8 800 123-45-67</a>
                             </li>
-                            <form class="header__breadcrumbs__search d-sm-none d-flex">
+                            <form class="header__breadcrumbs__search d-md-none d-flex">
                                 <input type="text" name="search" placeholder="Поиск">
                                 <label><input type="submit" value=""></label>
                             </form>
@@ -124,7 +124,7 @@
                        <a href="about_cur.html">Настройки аккаунта</a>
                    </li>
                </ul>
-               <form class="header__breadcrumbs__search col-lg-3 col-md-4 col-5 d-sm-flex d-none">
+               <form class="header__breadcrumbs__search col-lg-3 col-md-4 col-5 d-md-flex d-none">
                     <input type="text" name="search" placeholder="Поиск">
                     <label><input type="submit" value=""></label>
                </form>
@@ -135,7 +135,7 @@
 <main>
    <div class="container user-private">
        <div class="row">
-           <div class="col-2">
+           <div class="col-xl-2 col-lg-3 col-12">
                <ul class="nav nav-tabs" role="tablist">
                    <li class="nav-item">
                        <a class="nav-link active" id="account-setting-tab" data-toggle="tab" href="#account-setting" role="tab" aria-controls="account-setting" aria-selected="true">
@@ -154,7 +154,7 @@
                    </li>
                </ul>
            </div>
-           <div class="col-10">
+           <div class="col-xl-10 col-lg-9 col-12">
                <div class="col-12 user-private__header">
                    <p>Ваш статус:</p>
                    <a href="#">Серебняный</a>
@@ -163,48 +163,48 @@
                <div class="col-12 user-private__body">
                    <div class="tab-pane fade show active user-private__body__account-setting" id="account-setting" role="tabpanel" aria-labelledby="account-setting-tab">
                        <form>
-                           <div class="col-4 form__item">
+                           <div class="col-md-4 col-sm-8 col-12 mx-auto mx-md-0 form__item">
                                <h3>Аккаунт</h3>
-                               <div class="form__item__input status__read">
-                                   <p>E-mail<label></label></p>
+                               <div class="form__item__input ">
+                                   <p>E-mail</p>
                                    <span>
-                                       <input type="email" value="user@mail.com" readonly="readonly">
+                                       <input type="email" value="user@mail.com">
                                    </span>
                                </div>
-                               <div class="form__item__input status__read">
-                                   <p>Телефон<label></label></p>
+                               <div class="form__item__input ">
+                                   <p>Телефон</p>
                                    <span class="phone-mask">
-                                       <input type="number" value="79999999999"  readonly="readonly">
+                                       <input type="number" value="79999999999"  >
                                    </span>
                                </div>
                            </div>
-                           <div class="col-4 form__item">
+                           <div class="col-md-4 col-sm-8 col-12 mx-auto mx-md-0 form__item">
                                <h3>Персональные данные</h3>
-                               <div class="form__item__input status__read">
-                                   <p>Фамилия<label></label></p>
+                               <div class="form__item__input ">
+                                   <p>Фамилия</p>
                                    <span>
-                                       <input type="text" value="Иванов"  readonly="readonly">
+                                       <input type="text" value="Иванов"  >
                                    </span>
                                </div>
-                               <div class="form__item__input status__read">
-                                   <p>Имя<label></label></p>
+                               <div class="form__item__input ">
+                                   <p>Имя</p>
                                    <span>
-                                       <input type="text" value="Иван"  readonly="readonly">
+                                       <input type="text" value="Иван"  >
                                    </span>
                                </div>
-                               <div class="form__item__input status__read">
-                                   <p>Отчество<label></label></p>
+                               <div class="form__item__input ">
+                                   <p>Отчество</p>
                                    <span>
-                                       <input type="text" value="Иванович" readonly="readonly">
+                                       <input type="text" value="Иванович" >
                                    </span>
                                </div>
                            </div>
-                           <div class="col-4 form__item">
-                               <h3>Аккаунт</h3>
-                               <div class="form__item__input status__read">
-                                   <p>Город<label></label></p>
+                           <div class="col-md-4 col-sm-8 col-12 mx-auto mx-md-0 form__item">
+                               <h3>Домашний адрес</h3>
+                               <div class="form__item__input ">
+                                   <p>Город</p>
                                    <span>
-                                      <select disabled>
+                                      <select>
                                         <option value="def" disabled>Город</option>
                                         <option value="1" selected>Моздок</option>
                                         <option value="2">Москва</option>
@@ -213,39 +213,41 @@
                                     </select>
                                    </span>
                                </div>
-                               <div class="form__item__input status__read">
-                                   <p>Улица<label></label></p>
+                               <div class="form__item__input ">
+                                   <p>Улица</p>
                                    <span>
-                                       <input type="text" value="Ленина" readonly="readonly">
+                                       <input type="text" value="Ленина" >
                                    </span>
                                </div>
-                               <div class="form__item__input w-3-to-1 status__read">
-                                   <p>Дом<label></label></p>
+                               <div class="form__item__input w-3-to-1 ">
+                                   <p>Дом</p>
                                    <span>
-                                       <input type="number" value="12" readonly="readonly">
+                                       <input type="number" value="12" >
                                    </span>
                                </div>
-                               <div class="form__item__input w-3-to-1 status__read">
-                                   <p>Корпус<label></label></p>
+                               <div class="form__item__input w-3-to-1 ">
+                                   <p>Корпус</p>
                                    <span>
-                                       <input type="number" value="2" readonly="readonly">
+                                       <input type="number" value="2" >
                                    </span>
                                </div>
-                               <div class="form__item__input w-3-to-1 status__read">
-                                   <p>Квартира<label></label></p>
+                               <div class="form__item__input w-3-to-1 ">
+                                   <p>Квартира</p>
                                    <span>
-                                       <input type="number" value="22" readonly="readonly">
+                                       <input type="number" value="22" >
                                    </span>
                                </div>
                            </div>
-                           <span class="d-none">
-                               <input type="submit" class="save-submit">
-                           </span>
+                           <div class="form__item col-md-4 col-sm-8 col-12 mx-auto">
+                               <span>
+                                   <input type="submit" class="btn btn__purple purple-block"  name="sub" value="Сохранить изменения">
+                               </span>
+                           </div>
                        </form>
                    </div>
                    <div class="tab-pane fade user-private__body__change-pass" id="change-pass" role="tabpanel" aria-labelledby="change-pass-tab">
                        <form>
-                           <div class="col-4">
+                           <div class="col-md-4 col-sm-8 col-12">
                                <h3>Сменить пароль</h3>
                                <span>
                                    <input type="password" placeholder="Старый пароль *">
@@ -302,7 +304,7 @@
                                <p>Итого:</p>
                                <span>8400 руб</span>
                                <p>Скидка составила:</p>
-                               <span>1500 руб</span>
+                               <span class="small-font">1500 руб</span>
                            </div>
                        </div>
                        <div class="user-private__body__history-buy__order">
@@ -337,7 +339,7 @@
                                <p>Итого:</p>
                                <span>8400 руб</span>
                                <p>Скидка составила:</p>
-                               <span>1500 руб</span>
+                               <span class="small-font">1500 руб</span>
                            </div>
                        </div>
                    </div>
