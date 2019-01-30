@@ -15,4 +15,38 @@
     background: url("../assets/img/ico/icon_inst.svg")no-repeat center;
     background-size: contain;
   }
+  &__up{
+    display: inline-block;
+    width: 5px;
+    height: 12px;
+    margin: 0 5px;
+    background: url("../assets/img/ico/arr-up.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__down{
+    display: inline-block;
+    width: 5px;
+    height: 12px;
+    margin: 0 5px;
+    background: url("../assets/img/ico/arr-down.svg")no-repeat center;
+    background-size: contain;
+  }
+  &__visa{
+    display: inline-block;
+    width: 32px;
+    height: 10px;
+    margin: 0 4px;
+    background: url("../assets/img/ico/ico__visa.png")no-repeat center;
+    background-size: contain;
+    vertical-align: baseline!important;
+  }
+  &__mastercard{
+    display: inline-block;
+    width: 22px;
+    height: 14px;
+    margin: 0 4px;
+    background: url("../assets/img/ico/ico__mastercard.png")no-repeat center;
+    background-size: contain;
+    vertical-align:  baseline!important;
+  }
 }
