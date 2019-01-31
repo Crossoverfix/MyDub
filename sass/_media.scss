@@ -313,6 +313,23 @@
   .basket{
     padding-bottom: 40px;
   }
+  .my-drop__user_cab.mod-call{
+    left: 0;
+    right: auto;
+  }
+  .my-drop__user_cab.mod-user{
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+  }
+  .my-drop__user_cab.mod-subscribe{
+    position: fixed;
+    left: 50%;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%,-50%);
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__catalog ul li{

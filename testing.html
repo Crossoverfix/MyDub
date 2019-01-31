@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>My Dubai</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700|Cormorant:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="sass/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container-fluid header__navigation">
+        <div class="container">
+            <div class="row">
+                <div class="header__item header__navigation__nav col-lg-6 col-sm-4 col-7">
+                    <button class="mobil-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".mobil-collapse" aria-expanded="false"></button>
+                    <ul class="mobil-collapse navbar-collapse collapse">
+                        <li>
+                            <a href="about_us.html">О Нас</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="about_cur.html">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="news.html">Новости</a>
+                        </li>
+                        <li>
+                            <a href="404.html">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                        <ul class="mobil-collapse__sub-menu">
+                            <li>
+                                <a class="mobil-collapse__sub-menu__call-back" href="#">Напишите нам</a>
+                            </li>
+                            <li>
+                                <a class="mobil-collapse__sub-menu__call-back" data-toggle-f-my='user_call' href="#">ЗАКАЖИТЕ ЗВОНОК</a>
+                                <div class="my-drop my-drop__user_cab mod-call" data-toggle-t-my='user_call'>
+                                    <form>
+                                        <p class="my-drop__user_cab__title">Наш менеджер свяжется с Вами в ближайшее время</p>
+                                        <span>
+                                        <input type="text" placeholder="Имя">
+                                    </span>
+                                        <span>
+                                        <input type="number" placeholder="+7 (___) ___-__-__">
+                                    </span>
+                                        <span>
+                                        <input class="btn btn__purple purple-block" type="submit" value="ВОЙТИ">
+                                    </span>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="tel:8 800 123-45-67" class="header__navigation__tel__link">8 800 123-45-67</a>
+                            </li>
+                            <form class="header__breadcrumbs__search d-md-none d-flex">
+                                <input type="text" name="search" placeholder="Поиск">
+                                <label><input type="submit" value=""></label>
+                            </form>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__tel col-xl-3 col-lg col-4 d-sm-flex d-none">
+                    <a href="tel:8 800 123-45-67" class="header__navigation__tel__link">8 800 123-45-67</a>
+                </div>
+                <div class="header__item header__navigation__call-back col-xl-3 col-lg d-lg-flex d-none">
+                    <ul>
+                        <li>
+                            <a href="#">Напишите нам</a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle-f-my='user_call'>ЗАКАЖИТЕ ЗВОНОК</a>
+                            <div class="my-drop my-drop__user_cab mod-call" data-toggle-t-my='user_call'>
+                                <form>
+                                    <p class="my-drop__user_cab__title">Наш менеджер свяжется с Вами в ближайшее время</p>
+                                    <span>
+                                        <input type="text" placeholder="Имя">
+                                    </span>
+                                    <span>
+                                        <input type="number" placeholder="+7 (___) ___-__-__">
+                                    </span>
+                                    <span>
+                                        <input class="btn btn__purple purple-block" type="submit" value="ВОЙТИ">
+                                    </span>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__logo col-lg-3 col-md-3 col-sm-5 col-7">
+                    <a href="index.html" class="header__navigation__logo__wrap">
+                        <img src="assets/img/logo-1.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="header__item header__navigation__catalog col-xl-6 col-lg-5 col-md-9 col-sm-7 col-5">
+                    <button class="catalog-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".catalog-collapse" aria-expanded="false">Каталог</button>
+                    <ul class="catalog-collapse collapse">
+                        <li>
+                            <a href="#">Женская парфюмерия</a>
+                        </li>
+                        <li>
+                            <a href="#">Мужская парфюмерия</a>
+                        </li>
+                        <li>
+                            <a href="#">Аксессуары</a>
+                        </li>
+                        <li>
+                            <a href="#">Парфюмерия унисекс</a>
+                        </li>
+                        <li>
+                            <a href="#">Нишевая парфюмерия</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__item header__navigation__user col-xl-3 col-sm-4 col-5">
+                    <ul>
+                        <li>
+                            <a class="header__navigation__user__profile" href="user_cab.html" data-toggle-f-my='drop_user_cab'>Личный кабинет</a>
+                            <div class="my-drop my-drop__user_cab mod-user" data-toggle-t-my='drop_user_cab'>
+                                <form>
+                                    <p class="my-drop__user_cab__title">Авторизация</p>
+                                    <span>
+                                        <input type="email" placeholder="E-mail">
+                                    </span>
+                                    <span>
+                                        <input type="password" placeholder="Пароль">
+                                    </span>
+                                    <span>
+                                        <input class="btn btn__purple purple-block" type="submit" value="ВОЙТИ">
+                                    </span>
+                                    <a href="#" class="my-drop__user_cab__register">Регистрация</a>
+                                    <a href="#" class="my-drop__user_cab__forget" data-toggle-f-my='drop_user_cab_forget'>Забыли пароль?</a>
+                                </form>
+                            </div>
+                            <div class="my-drop my-drop__user_cab mod-user" data-toggle-t-my='drop_user_cab_forget'>
+                                <form>
+                                    <p class="my-drop__user_cab__title">Забыли пароль?</p>
+                                    <span>
+                                        <input type="email" placeholder="E-mail">
+                                    </span>
+                                    <span>
+                                        <input class="btn btn__purple purple-block" type="submit" value="ОТПРАВИТЬ">
+                                    </span>
+                                    <a href="#" class="my-drop__user_cab__register" data-toggle-f-my='drop_user_cab'>Войти</a>
+                                </form>
+                            </div>
+                        </li>
+                        <li>
+                            <label class="header__navigation__user__basket__count">2</label>
+                            <a class="header__navigation__user__basket" href="basket.html">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid header__breadcrumbs">
+       <div class="container">
+           <div class="row">
+               <ul class="header__breadcrumbs__link">
+                   <li>
+                       <a href="index.html">Главная</a>
+                   </li>
+                   <li>
+                       <a href="about_cur.html">Оплата и доставка</a>
+                   </li>
+               </ul>
+               <form class="header__breadcrumbs__search col-lg-3 col-md-4 col-5 d-md-flex d-none">
+                    <input type="text" name="search" placeholder="Поиск">
+                    <label><input type="submit" value=""></label>
+               </form>
+           </div>
+       </div>
+    </div>
+</header>
+<main>
+    <div class="container testing">
+        <div class="row">
+            <div class="col-md-6 col-12 mx-auto">
+                <button class="btn btn__purple" data-toggle-f-my='notification'>Тест нотификации</button>
+                <button class="btn btn__purple" data-toggle-f-my='subscribe'>Тест подписки</button>
+                <button class="btn btn__purple" data-toggle-f-my='confirm-buy'>Тест покупки</button>
+                <button class="btn btn__purple" data-toggle-f-my='auth'>Тест авторизация для покупки</button>
+                <button class="btn btn__purple" data-toggle-f-my='brand-teg'>Тест Показать все бренды (кнопка из фильтра)</button>
+                <div class="my-drop my-drop__brand" data-toggle-t-my='brand-teg'>
+                   <form>
+                       <div class="my-drop__brand__group">
+                           <p class="my-drop__brand__group__title">b</p>
+                           <ul>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>BL Battash</p>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>Bnfas Al Khaleej </p>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>BRL-REHAB AMOUAGE </p>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>BYL ZAAFARAN</p>
+                                   </label>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="my-drop__brand__group">
+                           <p class="my-drop__brand__group__title">b</p>
+                           <ul>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>BL Battash</p>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>Bnfas Al Khaleej </p>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>BRL-REHAB AMOUAGE </p>
+                                   </label>
+                               </li>
+                               <li>
+                                   <label>
+                                       <span>
+                                           <input type="checkbox">
+                                       </span>
+                                       <p>BYL ZAAFARAN</p>
+                                   </label>
+                               </li>
+                           </ul>
+                       </div>
+                   </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-wrap">
+        <div class="my-drop my-drop__user_cab mod-auth" data-toggle-t-my='auth'>
+            <form>
+                <p class="my-drop__user_cab__title">Авторизуйтесь для оформления заказа</p>
+                <span>
+                                        <input type="email" placeholder="E-mail">
+                                    </span>
+                <span>
+                                        <input type="password" placeholder="Пароль">
+                                    </span>
+                <span>
+                                        <input class="btn btn__purple purple-block" type="submit" value="ВОЙТИ">
+                </span>
+                    <a href="#" class="btn btn__ghost">Регистрация</a>
+                <a href="#" class="my-drop__user_cab__forget" data-toggle-f-my='drop_user_cab_forget'>Забыли пароль?</a>
+            </form>
+        </div>
+        <div class="my-drop my-drop__user_cab mod-subscribe" data-toggle-t-my='subscribe'>
+            <p class="my-drop__user_cab__title">Вы успешно подписались на рассылку акционных предложений и новостей нашего магазина!</p>
+            <p class="my-drop__user_cab__sub-title">Теперь Вы одним из первых будете узнавать о специальных предложениях и свежих поступлениях парфюмерии</p>
+            <button class="btn btn__purple purple-block" data-close-my="close">Ок</button>
+        </div>
+        <div class="my-drop my-drop__user_cab mod-subscribe mod-confirm-buy" data-toggle-t-my='confirm-buy'>
+            <p class="my-drop__user_cab__title">Спасибо за Ваш заказ</p>
+            <p class="my-drop__user_cab__strong">№00001</p>
+            <p class="my-drop__user_cab__sub-title">Подтверждающее письмо уже отправлено на Ваш e-mail</p>
+            <p class="my-drop__user_cab__sub-title">Ожидайте звонка от представителя компании для подтверждения заказа</p>
+            <button class="btn btn__purple purple-block" data-close-my="close">На главную</button>
+        </div>
+        <div class="container notification" data-toggle-t-my='notification'>
+            <div class="row">
+                <div class="col-12">
+                    <div class="notification__body">
+                        <p>Attar Collection Khaltat Night успешно добавлен в корзину!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container footer__body">
+        <div class="row">
+            <div class="footer__body__logo col-2 d-lg-block d-none">
+                <a href="index.html">
+                    <img src="assets/img/logo-2.svg" alt="logo">
+                </a>
+            </div>
+            <div class="footer__body__catalog col-xl-2 col-lg-3 col-sm-4 col-12">
+                <a href="catalog.html">КАТАЛОГ ПАРФЮМЕРИИ</a>
+                <button class="footer-catalog-collapse__btn collapsed" type="button" data-toggle="collapse" data-target=".footer-catalog-collapse" aria-expanded="false">Каталог</button>
+                <ul class="footer-catalog-collapse collapse">
+                    <li>
+                        <a href="catalog.html">Женская парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Мужская парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Парфюмерия унисекс</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Нишевая парфюмерия</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body__nav col-xl-5 col-lg-4 col-sm-4 col-12">
+                <ul>
+                    <li>
+                        <a href="about_us.html">О НАС</a>
+                    </li>
+                    <li>
+                        <a href="news.html">НОВОСТИ</a>
+                    </li>
+                    <li>
+                        <a href="about_cur.html">ОПЛАТА И ДОСТАВКА</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__body__contact col-lg-3 col-sm-4 col-12">
+                <p>г. Екатеринбург ТРЦ Гринвич, 4 очередь, 1 этаж (над Гиперболой)</p>
+                <a href="tel:88001234567" class="footer__body__contact__tel">8 800 123-45-67</a>
+                <a href="mailto:info@mydubai.ru" class="footer__body__contact__mail">info@mydubai.ru</a>
+                <div class="footer__body__contact__social">
+                    <a href="#" class="ico-vk"></a>
+                    <a href="#" class="ico-insta"></a>
+                </div>
+            </div>
+            <div class="footer__body__copyright col-12">
+                <p>ИП Положенцева М.В. 2019 © Все права защищены</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
