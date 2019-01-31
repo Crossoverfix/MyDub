@@ -58,6 +58,11 @@
   .loyalty-program__block__body > div > p{
     padding: 0 5px;
   }
+  .my-drop__brand .mod-column {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
 }
 @media screen and (max-width: 991px){
   .header__item{
@@ -330,6 +335,10 @@
     bottom: auto;
     transform: translate(-50%,-50%);
   }
+  .my-drop__brand{
+    width: 90vw;
+    max-height: 80vh;
+  }
 }
 @media screen and (max-width: 767px){
   .header__navigation__catalog ul li{
@@ -447,6 +456,11 @@
   }
   .catalog__filter.basket-mod .you-value{
     padding: 14px 8px 2px 8px;
+  }
+  .my-drop__brand .mod-column {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
   }
 }
 @media screen and (max-width: 574px){
@@ -751,5 +765,15 @@
   }
   .catalog__filter{
     padding-top: 20px;
+  }
+  .my-drop__brand .mod-column {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    overflow: auto;
+    max-height: 100%;
+  }
+  .my-drop__brand form{
+    max-height: 70vh;
   }
 }
