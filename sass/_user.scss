@@ -401,10 +401,10 @@
             justify-content: flex-start;
             position: relative;
             margin-bottom: 12px;
-            a,p{
+            p{
               margin: 0;
             }
-            p.item__name{
+            .item__name.mod-par{
               text-decoration: none;
               color: $c-text-d;
               display: inline-block;
@@ -426,9 +426,9 @@
                   display: inline-block;
                   text-decoration: underline $c-purple;
                 }
-                &:hover{
-                  color: #CC11FF;
-                }
+                //&:hover{
+                //  color: #CC11FF;
+                //}
               }
               &__size{
                 width: 10%;
@@ -509,6 +509,7 @@
       margin-bottom: 8px;
       text-align: center;
       padding: 0 250px;
+      line-height: 1.2;
     }
     > p{
       font-size: 15px;
