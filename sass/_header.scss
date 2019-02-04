@@ -324,6 +324,22 @@
       border: none;
       outline: none;
     }
+    &.inside-btn{
+      position: absolute;
+      top: 26px;
+      right: 20px;
+      left: auto;
+      bottom: auto;
+      height: 14px;
+      width: 14px;
+      background: url("../assets/img/ico/close.svg")no-repeat center;
+      background-size: contain;
+      cursor: pointer;
+      opacity: 0.3;
+      &:hover{
+        opacity: 0.6;
+      }
+    }
   }
   ul.mobil-collapse__sub-menu{
     display: none;
