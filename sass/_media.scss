@@ -84,11 +84,30 @@
   .mobil-collapse.collapse{
     display: none;
   }
+  ul.mobil-collapse{
+    position: absolute;
+    z-index: 3;
+    width: calc(100% + 100px);
+    padding: 25px 20px;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    color: white;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: $c-purple;
+    }
+  }
   ul.mobil-collapse.collapsing{
     position: absolute;
     z-index: 3;
     width: calc(100% + 100px);
-    padding: 20px 15px;
+    padding: 25px 20px;
     left: 0;
     top: 0;
     overflow: hidden;
@@ -116,25 +135,6 @@
   }
   .mobil-collapse__btn{
     display: block;
-  }
-  ul.mobil-collapse{
-    position: absolute;
-    z-index: 3;
-    width: calc(100% + 100px);
-    padding: 20px 15px;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    color: white;
-    &:before{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-color: $c-purple;
-    }
   }
   .mobil-collapse ul.mobil-collapse__sub-menu{
     display: flex;
@@ -355,6 +355,34 @@
   }
   .mobil-collapse ul.mobil-collapse__sub-menu li a.mobil-collapse__sub-menu__call-back{
     color: white;
+  }
+  .header__navigation__nav ul li.mobil-collapse__has-drop{
+    padding-right: 0;
+    > a{
+      display: none;
+    }
+  }
+  .header__navigation__nav ul li.mobil-collapse__has-drop:before{
+    width: 0;
+  }
+  .header__navigation__nav ul li.mobil-collapse__has-drop ul.mobil-collapse__drop-menu{
+    display: flex;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    padding: 0;
+  }
+  .header__navigation__nav ul li.mobil-collapse__has-drop ul.mobil-collapse__drop-menu li a{
+    padding: 0;
+  }
+  .header__navigation__nav ul li.mobil-collapse__has-drop ul.mobil-collapse__drop-menu li:hover{
+    background-color: transparent;
+  }
+  .header__navigation__nav ul li{
+    margin-bottom: 15px;
+    &.mobil-collapse__has-drop{
+      margin-bottom: 0;
+    }
   }
 }
 @media screen and (max-width: 767px){

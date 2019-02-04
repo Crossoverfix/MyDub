@@ -41,6 +41,49 @@
         justify-content: flex-start;
         li{
           margin-right: 18px;
+          &.mobil-collapse__has-drop{
+            position: relative;
+            padding-right: 18px;
+            &:before{
+              content: "";
+              position: absolute;
+              width: 8px;
+              height: 4px;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              background: url("../assets/img/ico/drop-down.svg")no-repeat center;
+              background-size: contain;
+            }
+            &.active{
+              &:before{
+                transform: translateY(-50%) rotate(180deg);
+              }
+            }
+            ul.mobil-collapse__drop-menu{
+              position: absolute;
+              flex-direction: column;
+              display: none;
+              background-color: white;
+              top: calc(100% + 8px);
+              left: 0;
+              z-index: 101;
+              padding: 6px 0;
+              li{
+                margin-right: 0;
+                a{
+                  height: 32px;
+                  padding: 0 14px;
+                }
+                &:hover{
+                  background-color: rgba(0, 0, 0, 0.04);
+                }
+              }
+              &.active{
+                display: flex;
+              }
+            }
+          }
           a{
             text-transform: uppercase;
             color: $c-text-d-6;
