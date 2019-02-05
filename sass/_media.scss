@@ -91,7 +91,7 @@
     padding: 25px 20px;
     left: 0;
     top: 0;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     &:before{
       content: "";
@@ -112,7 +112,7 @@
     left: 0;
     top: 0;
     overflow: visible;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
     transition: all 0.2s;
     &:before{
@@ -528,6 +528,9 @@
       background: url(../assets/img/search-w.svg) no-repeat center;
       background-size: contain;
     }
+  }
+  .mobil-collapse ul.mobil-collapse__sub-menu{
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 574px){
@@ -966,5 +969,12 @@
   }
   ul.mobil-collapse{
     max-width: 100vw;
+  }
+  .catalog__filter__group-all{
+    width: 100%;
+    padding-right: 0;
+  }
+  .catalog__filter__group{
+    width: 100%;
   }
 }
