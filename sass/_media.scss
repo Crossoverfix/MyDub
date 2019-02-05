@@ -531,6 +531,7 @@
   }
   .mobil-collapse ul.mobil-collapse__sub-menu{
     padding-bottom: 50px;
+    flex-grow: 1;
   }
 }
 @media screen and (max-width: 574px){
