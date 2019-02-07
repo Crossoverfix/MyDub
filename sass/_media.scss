@@ -353,6 +353,7 @@
   .header__navigation__nav ul li a{
     color: white;
     font-size: 18px;
+    font-weight: 500;
     &:hover{
       color: white;
       text-decoration: underline;
@@ -979,5 +980,17 @@
   }
   .catalog__filter__group{
     width: 100%;
+  }
+  ul.mobil-collapse.collapsing{
+    width: 100vw;
+  }
+  ul.mobil-collapse.show{
+    width: 100vw;
+  }
+  ul.mobil-collapse:before{
+    width: 150%;
+  }
+  .mobil-collapse__btn.inside-btn{
+    right: 30px;
   }
 }
