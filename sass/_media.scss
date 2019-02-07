@@ -352,6 +352,7 @@
   }
   .header__navigation__nav ul li a{
     color: white;
+    font-size: 18px;
     &:hover{
       color: white;
       text-decoration: underline;
@@ -359,6 +360,7 @@
   }
   .mobil-collapse ul.mobil-collapse__sub-menu li a.mobil-collapse__sub-menu__call-back{
     color: white;
+    font-size: 18px;
   }
   .header__navigation__nav ul li.mobil-collapse__has-drop{
     padding-right: 0;
@@ -383,7 +385,7 @@
     background-color: transparent;
   }
   .header__navigation__nav ul li{
-    margin-bottom: 14px;
+    margin-bottom: 18px;
     &.mobil-collapse__has-drop{
       margin-bottom: 0;
     }
